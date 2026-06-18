@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css?family=Radley:regular,italic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500" rel="stylesheet">
-    <link rel='stylesheet' href='css/swiper-bundle.min.css'>
-    <link rel="stylesheet" href="css/main-styles.css">
-    <title>NewProject</title>
+    <meta name="description" content="40+ years of travel experience. Get custom, personally curated journeys at the same price as booking direct. Enjoy seamless travel with just one point of contact.">
+
+    <link rel='stylesheet' href='css/swiper-bundle.min.css' media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <title>Expertly Planned Journeys & Custom Travel Planning | The Carefree Travel</title>
 </head>
 
 <body>
@@ -64,11 +63,11 @@
                     </div>
                 </div>
                 <button class='burger-menu' type="button" aria-label="Open and close menu">
-                    <div class="burger-menu__wrapper">
+                    <span class="burger-menu__wrapper">
                         <span class='burger-menu__line burger-menu__line-1'></span>
                         <span class='burger-menu__line burger-menu__line-2'></span>
                         <span class='burger-menu__line burger-menu__line-3'></span>
-                    </div>
+                    </span>
                 </button>
             </div>
         </header>
@@ -76,14 +75,13 @@
             <section class='home-hero' aria-labelledby='home-hero-title'>
                 <div class='home-hero__container'>
                     <div class="home-hero__back ibg">
-                        <img src="img/homepage/hero/hero-back.jpg" aria-hidden="true" alt="hero-back">
                         <picture>
                             <source media="(max-width: 390px)" srcset="img/homepage/hero/hero-back-mobile.webp"
                                 type="image/webp">
-                            <source media="(max-width: 744px)" srcset="img/homepage/hero/hero-back-tablet.jpg"
+                            <source media="(max-width: 744px)" srcset="img/homepage/hero/hero-back-tablet.webp"
                                 type="image/webp">
                             <source srcset="img/homepage/hero/hero-back.webp" type="image/webp">
-                            <img src="img/homepage/hero/hero-back.jpg" aria-hidden="true" loading="eager">
+                            <img src="img/homepage/hero/hero-back.jpg" loading="eager" fetchpriority="high" aria-hidden="true" alt="hero-back">
                         </picture>
                     </div>
                     <div class="home-hero__info">
@@ -137,7 +135,7 @@
                                     <source media="(max-width: 744px)"
                                         srcset="img/homepage/hero/hero-offer-image-tablet.webp" type="image/webp">
                                     <source srcset="img/homepage/hero/hero-offer-image.webp" type="image/webp">
-                                    <img src="img/homepage/hero/hero-offer-image.jpg" alt="hero-offer-image"
+                                    <img src="img/homepage/hero/hero-offer-image.jpg" loading="eager" fetchpriority="high" alt="hero-offer-image"
                                         loading="eager">
                                 </picture>
                             </a>
@@ -290,7 +288,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_01.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_01.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -321,7 +319,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_02.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_02.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -352,7 +350,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_03.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_03.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -383,7 +381,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_04.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_04.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -414,7 +412,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_01.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_01.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -445,7 +443,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_02.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_02.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -476,7 +474,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_03.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_03.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -507,7 +505,7 @@
                                                     <source srcset="img/homepage/destinations/destination-image_04.webp"
                                                         type="image/webp">
                                                     <img src="img/homepage/destinations/destination-image_04.jpg"
-                                                        aria-hidden="destination" loading="lazy">
+                                                        alt="destination" loading="lazy">
                                                 </picture>
                                             </div>
                                             <div class="content-home-destinations__category">
@@ -885,7 +883,7 @@
                     <div class="home-contacts__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6628.859845677185!2d-111.9296551!3d33.8270218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7ec6bee23ecf%3A0x442b132133415e13!2sThe%20Carefree%20Traveler!5e0!3m2!1suk!2sua!4v1781703920436!5m2!1suk!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="600" height="450" style="border:0;" allowfullscreen="" title="Interactive map of The Carefree Traveler location" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -894,7 +892,7 @@
         <footer class="footer">
             <div class="footer__container">
                 <a href="/" class="footer__logo" aria-label="Home page link">
-                    <img src="img/main/logo.png" alt="logo">
+                    <img src="img/main/logo.png" loading="lazy" alt="logo">
                 </a>
                 <div class="items-footer">
                     <div class="items-footer__item">
@@ -951,8 +949,8 @@
         </footer>
     </div>
     <script src='js/swiper-bundle.min.js'></script>
-    <script src='js/swipers-inits.js'></script>
-    <script src="js/script.js"></script>
+    <script src='js/swipers-inits.min.js'></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

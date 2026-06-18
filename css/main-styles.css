@@ -76,6 +76,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Radley";
+  src: url("../fonts/Radley-Regular.woff2") format("woff2"), url("../fonts/Radley-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Radley";
+  src: url("../fonts/Radley-Italic.woff2") format("woff2"), url("../fonts/Radley-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 :root {
   /* Brand colors */
   --brand-100: #f2eade;
@@ -127,7 +155,6 @@ h1, h2, h3, h4, h5, h6 {
   /* font families*/
   --font-family: "Montserrat", sans-serif;
   --second-family: "Radley", sans-serif;
-  --third-family: "Inter", sans-serif;
 }
 
 html,
@@ -136,12 +163,13 @@ body {
 }
 
 body {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family);
   color: #000;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   background: var(--primary-white);
+  -webkit-font-smoothing: antialiased;
 }
 body._lock {
   overflow: hidden;
@@ -871,7 +899,13 @@ body._lock {
 
 .home-services {
   background: var(--darkblue-500);
-  padding-block: 60px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+@media (max-width: 767.98px) {
+  .home-services {
+    padding-block: 60px;
+  }
 }
 @media (max-width: 500px) {
   .home-services {
@@ -1717,6 +1751,7 @@ body._lock {
 }
 .home-contacts__subtitle {
   margin-bottom: 32px;
+  color: var(--content-text-light);
 }
 @media (max-width: 991.98px) {
   .home-contacts__subtitle {
@@ -1745,7 +1780,7 @@ body._lock {
 }
 .home-contacts__link {
   display: block;
-  color: var(--primary-white);
+  color: var(--content-text-light);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
