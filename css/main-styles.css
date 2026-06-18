@@ -1171,6 +1171,7 @@ body._lock {
 }
 .content-home-destinations__title {
   margin-bottom: 10px;
+  font-family: var(--second-family);
 }
 .content-home-destinations__link {
   font-size: 20px;
