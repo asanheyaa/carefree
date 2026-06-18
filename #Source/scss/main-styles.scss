@@ -1047,6 +1047,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 38px;
+	margin-inline: auto;
 	&__body {
 		min-width: 0;
 	}

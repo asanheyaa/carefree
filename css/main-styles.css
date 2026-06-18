@@ -1399,6 +1399,7 @@ body._lock {
       -ms-flex-align: center;
           align-items: center;
   gap: 38px;
+  margin-inline: auto;
 }
 .content-home-partners__body {
   min-width: 0;
