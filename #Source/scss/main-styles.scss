@@ -214,8 +214,8 @@ body {
 			background: transparent;
 			color: var(--darkblue-500);
 			cursor: not-allowed;
-			@media (any-hover: hover){
-				&:hover{
+			@media (any-hover: hover) {
+				&:hover {
 					border-color: var(--darkblue-400);
 					color: var(--darkblue-400);
 				}
@@ -626,6 +626,9 @@ body {
 
 		box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 		transition: all 0.3s ease 0s;
+		will-change: backdrop-filter, transform;
+		transform: translateZ(0);
+		isolation: isolate;
 		@media (any-hover: hover) {
 			&:hover {
 				background: rgba(255, 255, 255, 0.1);
@@ -835,8 +838,7 @@ body {
 		@media (max-width: 50rem) {
 			width: 18.75rem;
 			&:not(:last-child),
-			&:last-child{
-
+			&:last-child {
 				margin-right: 1.25rem;
 			}
 		}
@@ -1359,7 +1361,7 @@ body {
 			grid-template-columns: repeat(2, 1fr);
 			column-gap: 2rem;
 		}
-		@media (max-width:40.625rem) {
+		@media (max-width: 40.625rem) {
 			text-align: center;
 		}
 	}
@@ -1418,7 +1420,6 @@ body {
 				text-decoration: underline;
 			}
 		}
-		
 	}
 
 	&__icon {

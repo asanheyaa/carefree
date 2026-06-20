@@ -891,6 +891,10 @@ body._lock {
           box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  will-change: backdrop-filter, transform;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  isolation: isolate;
 }
 @media (any-hover: hover) {
   .card-home-hero__card:hover {
