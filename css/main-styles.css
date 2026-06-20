@@ -341,6 +341,12 @@ body._lock {
   color: var(--darkblue-500);
   cursor: not-allowed;
 }
+@media (any-hover: hover) {
+  .swiper-nav__button.swiper-button-disabled:hover {
+    border-color: var(--darkblue-400);
+    color: var(--darkblue-400);
+  }
+}
 .swiper-nav__button-prev {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
