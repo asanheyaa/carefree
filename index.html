@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="40+ years of travel experience. Get custom, personally curated journeys at the same price as booking direct. Enjoy seamless travel with just one point of contact.">
+    <meta name="description"
+        content="40+ years of travel experience. Get custom, personally curated journeys at the same price as booking direct. Enjoy seamless travel with just one point of contact.">
 
     <link rel='stylesheet' href='css/swiper-bundle.min.css' media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/main-styles.css">
@@ -73,17 +74,18 @@
         </header>
         <main class="page">
             <section class='home-hero' aria-labelledby='home-hero-title'>
+                <div class="home-hero__back ibg">
+                    <picture>
+                        <source media="(max-width: 390px)" srcset="img/homepage/hero/hero-back-mobile.webp"
+                            type="image/webp">
+                        <source media="(max-width: 744px)" srcset="img/homepage/hero/hero-back-tablet.webp"
+                            type="image/webp">
+                        <source srcset="img/homepage/hero/hero-back.webp" type="image/webp">
+                        <img src="img/homepage/hero/hero-back.jpg" loading="eager" fetchpriority="high"
+                            aria-hidden="true" alt="hero-back">
+                    </picture>
+                </div>
                 <div class='home-hero__container'>
-                    <div class="home-hero__back ibg">
-                        <picture>
-                            <source media="(max-width: 390px)" srcset="img/homepage/hero/hero-back-mobile.webp"
-                                type="image/webp">
-                            <source media="(max-width: 744px)" srcset="img/homepage/hero/hero-back-tablet.webp"
-                                type="image/webp">
-                            <source srcset="img/homepage/hero/hero-back.webp" type="image/webp">
-                            <img src="img/homepage/hero/hero-back.jpg" loading="eager" fetchpriority="high" aria-hidden="true" alt="hero-back">
-                        </picture>
-                    </div>
                     <div class="home-hero__info">
                         <h1 class="home-hero__title">
                             Expertly Planned Journeys. Personally Curated.
@@ -127,25 +129,25 @@
                         </a>
                     </div>
                     <div class="card-home-hero">
-                        <article class="card-home-hero__article">
-                            <a href="" class="card-home-hero__image ibg">
+                        <a href="" class="card-home-hero__card">
+                            <div class="card-home-hero__image ibg">
                                 <picture>
                                     <source media="(max-width: 390px)"
                                         srcset="img/homepage/hero/hero-offer-image-mobile.webp" type="image/webp">
                                     <source media="(max-width: 744px)"
                                         srcset="img/homepage/hero/hero-offer-image-tablet.webp" type="image/webp">
                                     <source srcset="img/homepage/hero/hero-offer-image.webp" type="image/webp">
-                                    <img src="img/homepage/hero/hero-offer-image.jpg" loading="eager" fetchpriority="high" alt="hero-offer-image"
-                                        loading="eager">
+                                    <img src="img/homepage/hero/hero-offer-image.jpg" loading="eager"
+                                        fetchpriority="high" alt="hero-offer-image" loading="eager">
                                 </picture>
-                            </a>
+                            </div>
                             <h2 class="card-home-hero__title">
-                                <a href="" class="card-home-hero__link">Cruise offers</a>
+                                Cruise offers
                             </h2>
                             <div class="card-home-hero__subtitle">
                                 Explore exclusive offers and set sail with confidence
                             </div>
-                            <a href="" class="card-home-hero__button">
+                            <div class="card-home-hero__button">
                                 <span class="card-home-hero__text">
                                     View course offers
                                 </span>
@@ -154,8 +156,8 @@
                                         <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                                     </svg>
                                 </span>
-                            </a>
-                        </article>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -275,8 +277,8 @@
                         <div class='content-home-destinations__swiper swiper'>
                             <div class='content-home-destinations__wrapper swiper-wrapper'>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -294,20 +296,18 @@
                                             <div class="content-home-destinations__category">
                                                 Coastal charm
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Victoria
-                                            </a>
+                                            Victoria
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             British Columbia, Canada
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -325,20 +325,18 @@
                                             <div class="content-home-destinations__category">
                                                 Coastal charm
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Puerto Vallarta
-                                            </a>
+                                            Puerto Vallarta
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             Puerto Vallarta, Jalisco, Mexico
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -356,20 +354,18 @@
                                             <div class="content-home-destinations__category">
                                                 Serene beaches
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Cabo San Lucas
-                                            </a>
+                                            Cabo San Lucas
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             Baja California Sur, Mexico
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -387,20 +383,18 @@
                                             <div class="content-home-destinations__category">
                                                 Romantic getaway
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Victoria
-                                            </a>
+                                            Victoria
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             South Aegean, Greece
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -418,20 +412,18 @@
                                             <div class="content-home-destinations__category">
                                                 Coastal charm
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Victoria
-                                            </a>
+                                            Victoria
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             British Columbia, Canada
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -449,20 +441,18 @@
                                             <div class="content-home-destinations__category">
                                                 Coastal charm
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Puerto Vallarta
-                                            </a>
+                                            Puerto Vallarta
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             Puerto Vallarta, Jalisco, Mexico
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -480,20 +470,18 @@
                                             <div class="content-home-destinations__category">
                                                 Serene beaches
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Cabo San Lucas
-                                            </a>
+                                            Cabo San Lucas
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             Baja California Sur, Mexico
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class='content-home-destinations__slide swiper-slide'>
-                                    <div class="content-home-destinations__wrapper">
-                                        <a href="" class="content-home-destinations__visual">
+                                    <a href="" class="content-home-destinations__slide-wrapper">
+                                        <div class="content-home-destinations__visual">
                                             <div class="content-home-destinations__image ibg">
                                                 <picture>
                                                     <source media="(max-width: 390px)"
@@ -511,16 +499,14 @@
                                             <div class="content-home-destinations__category">
                                                 Romantic getaway
                                             </div>
-                                        </a>
+                                        </div>
                                         <h3 class="content-home-destinations__title">
-                                            <a href="" class="content-home-destinations__link">
-                                                Victoria
-                                            </a>
+                                            Victoria
                                         </h3>
                                         <div class="content-home-destinations__description">
                                             South Aegean, Greece
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="content-home-destinations__pagination pagination"></div>
@@ -591,112 +577,322 @@
                         <div class="content-home-partners__body">
                             <div class='content-home-partners__swiper swiper'>
                                 <div class='content-home-partners__wrapper swiper-wrapper'>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_01.png" loading="lazy" alt="partner">
-                                        </div>
-                                    </div>
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_02.svg" loading="lazy" alt="partner">
-                                        </div>
-                                    </div>
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_03.png" loading="lazy" alt="partner">
-                                        </div>
-                                    </div>
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_04.png" loading="lazy" alt="partner">
-                                        </div>
-                                    </div>
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_05.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_01.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_01_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
 
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_01.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_02.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_02_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_02.svg" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_03.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_03_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_03.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_04.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_04_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_04.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_05.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_05_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
+
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_05.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_13.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_13_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_06.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_14.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_14_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_07.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_15.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_15_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_08.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_16.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_16_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_09.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_17.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_17_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_10.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_18.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_18_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_06.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_19.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_19_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_07.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_06.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_06_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_08.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_07.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_07_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_09.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_08.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_08_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
                                     <div class='content-home-partners__slide swiper-slide'>
-                                        <div class="content-home-partners__slide-wrapper">
-                                            <img src="img/homepage/partners/Partner_10.png" loading="lazy" alt="partner">
-                                        </div>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_09.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_09_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
                                     </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_10.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_10_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_11.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_11_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_12.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_12_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_20.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_20_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_21.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_21_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_22.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_22_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_23.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_23_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class='content-home-partners__slide swiper-slide'>
+                                        <a href="" class="content-home-partners__slide-wrapper">
+                                            <div class="content-home-partners__partner-logo">
+                                                <img src="img/homepage/partners/Partner_24.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                            <div class="content-home-partners__partner-logo --on-hover">
+                                                <img src="img/homepage/partners/Partner_24_on-hover.png" loading="lazy"
+                                                    alt="partner">
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
-                                <!-- <div class="content-home-partners__nav swiper-nav">
-                            
-                            
-                                </div> -->
                                 <div class="content-home-partners__pagination pagination"></div>
                             </div>
                         </div>
@@ -850,7 +1046,8 @@
                         </div>
                         <ul class="home-contacts__list">
                             <li class="home-contacts__item">
-                                <a href="https://www.google.com/maps?ll=33.82764,-111.924443&z=15&t=m&hl=uk&gl=UA&mapclient=embed&cid=4912040851892428307" class="home-contacts__link">
+                                <a href="https://www.google.com/maps?ll=33.82764,-111.924443&z=15&t=m&hl=uk&gl=UA&mapclient=embed&cid=4912040851892428307"
+                                    class="home-contacts__link">
                                     <div class="home-contacts__icon">
                                         <svg>
                                             <use xlink:href='img/icons/icons-sprite.svg#location'></use>
@@ -883,7 +1080,8 @@
                     <div class="home-contacts__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6628.859845677185!2d-111.9296551!3d33.8270218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7ec6bee23ecf%3A0x442b132133415e13!2sThe%20Carefree%20Traveler!5e0!3m2!1suk!2sua!4v1781703920436!5m2!1suk!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" title="Interactive map of The Carefree Traveler location" loading="lazy"
+                            width="600" height="450" style="border:0;" allowfullscreen=""
+                            title="Interactive map of The Carefree Traveler location" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -948,8 +1146,8 @@
             </div>
         </footer>
     </div>
-    <script defer src='js/swiper-bundle.min.js' ></script>
-    <script defer src='js/swipers-inits.min.js'></script>
+    <script defer src='js/swiper-bundle.min.js'></script>
+    <script defer src='js/swipers-inits.js'></script>
     <script src="js/script.min.js"></script>
 </body>
 

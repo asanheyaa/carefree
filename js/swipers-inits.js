@@ -3,40 +3,16 @@
 const homeDestinationSwiper = document.querySelector('.content-home-destinations__swiper');
 if (homeDestinationSwiper) {
 	const swiper = new Swiper(homeDestinationSwiper, {
-		slidesPerView: 1.2,
-		spaceBetween: 20,
+		slidesPerView:'auto',
+		spaceBetween: 0,
+		observer: true,
+		observeParents: true,
+		resizeObserver: true,
 		navigation: {
 			nextEl: '.content-home-destinations__button-next',
 			prevEl: '.content-home-destinations__button-prev',
 		},
 		speed: 500,
-
-		breakpoints: {
-			380: {
-				slidesPerView: 1.5,
-			},
-			400: {
-				slidesPerView: 1.5,
-			},
-			485: {
-				slidesPerView: 2.2,
-			},
-			630: {
-				slidesPerView: 2.32,
-			},
-			800: {
-				slidesPerView: 3,
-			},
-			992: {
-				slidesPerView: 3.5,
-
-			},
-			1200: {
-				slidesPerView: 4,
-				spaceBetween: 32,
-			}
-		},
-
 		pagination: {
 			el: '.content-home-destinations__pagination',
 			type: 'bullets',
@@ -53,9 +29,8 @@ if (homePartnersSwiper) {
 	function initPartnersSwiper() {
 		const width = window.innerWidth;
 		let slides = 2;
-		let gap = 12;
+		let gap = 4;
 
-		// Визначаємо параметри для кожного брейкпоїнта (як у вашому ТЗ)
 		if (width >= 768) {
 			slides = 5;
 			gap = 20;
@@ -89,19 +64,15 @@ if (homePartnersSwiper) {
 			}
 		};
 
-		// Якщо слайдер вже існує — повністю видаляємо його перед створенням нового
 		if (swiperInstance) {
 			swiperInstance.destroy(true, true);
 		}
 
-		// Створюємо чистий слайдер під поточний екран
 		swiperInstance = new Swiper(homePartnersSwiper, config);
 	}
 
-	// Перший запуск при завантаженні сторінки
 	initPartnersSwiper();
 
-	// Розумне відстеження ресайзу (спрацьовує ТІЛЬКИ коли реально змінюється кількість слайдів)
 	let currentSlidesCount = swiperInstance ? swiperInstance.params.slidesPerView : 2;
 	let resizeTimeout;
 
@@ -115,7 +86,6 @@ if (homePartnersSwiper) {
 			else if (width >= 600) targetSlides = 4;
 			else if (width >= 450) targetSlides = 3;
 
-			// Перезапускаємо Swiper тільки якщо змінився брейкпоїнт, щоб не смикати процесор на кожен піксель
 			if (targetSlides !== currentSlidesCount) {
 				currentSlidesCount = targetSlides;
 				initPartnersSwiper();
