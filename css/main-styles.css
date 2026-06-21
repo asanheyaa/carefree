@@ -343,6 +343,7 @@ body._lock {
 }
 @media (any-hover: hover) {
   .swiper-nav__button.swiper-button-disabled:hover {
+    background: none;
     border-color: var(--darkblue-400);
     color: var(--darkblue-400);
   }
@@ -2076,6 +2077,12 @@ body._lock {
     gap: 0.625rem;
   }
 }
+@media (any-hover: hover) {
+  .items-footer__tel:hover .items-footer__text {
+    color: var(--brand-600);
+    text-decoration: underline;
+  }
+}
 .items-footer__icon {
   width: 20px;
   height: 20px;
@@ -2092,6 +2099,10 @@ body._lock {
 .items-footer__icon svg {
   width: 20px;
   height: 20px;
+}
+.items-footer__text {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .items-footer__list {
   display: -webkit-box;
@@ -2121,4 +2132,11 @@ body._lock {
 }
 .items-footer__link {
   color: var(--neutral-500);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .items-footer__link:hover {
+    color: var(--brand-600);
+  }
 }

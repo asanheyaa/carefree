@@ -216,6 +216,7 @@ body {
 			cursor: not-allowed;
 			@media (any-hover: hover) {
 				&:hover {
+					background: none;
 					border-color: var(--darkblue-400);
 					color: var(--darkblue-400);
 				}
@@ -1581,6 +1582,14 @@ body {
 		@media (max-width: 61.9988rem) {
 			gap: 0.625rem;
 		}
+		@media (any-hover: hover){
+			&:hover{
+				.items-footer__text{
+					color: var(--brand-600);
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 
 	&__icon {
@@ -1588,6 +1597,7 @@ body {
 	}
 
 	&__text {
+		transition: all 0.3s ease 0s;
 	}
 
 	&__nav {
@@ -1605,5 +1615,11 @@ body {
 	&__link {
 		@include svgSizes(20, 20);
 		color: var(--neutral-500);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				color: var(--brand-600);
+			}
+		}
 	}
 }
