@@ -390,7 +390,6 @@ body {
 			&:hover {
 				.actions-header__text {
 					color: var(--brand-600);
-					text-decoration: underline;
 				}
 			}
 		}
@@ -512,8 +511,15 @@ body {
 		top: 0;
 		left: 0;
 		z-index: 1;
-		@media (max-width: 47.9988rem) {
-		}
+		&::after{
+			content:'';
+			position:absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			background: linear-gradient(180deg, #081E3F 0%, rgba(25, 31, 38, 0.32) 52.4%, #081E3F 100%);
+			}
 	}
 
 	&__info {
@@ -1586,7 +1592,6 @@ body {
 			&:hover{
 				.items-footer__text{
 					color: var(--brand-600);
-					text-decoration: underline;
 				}
 			}
 		}
