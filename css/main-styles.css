@@ -1288,8 +1288,12 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 23.75rem;
           flex: 0 0 23.75rem;
-  margin-left: -1.75rem;
   margin-right: 2.5rem;
+}
+@media (max-width: 1440px) {
+  .home-tips__image {
+    margin-left: -1.75rem;
+  }
 }
 @media (max-width: 75rem) {
   .home-tips__image {
