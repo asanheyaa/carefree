@@ -339,10 +339,6 @@ body {
 			background: var(--primary-white);
 			transform: translate(-100%, 0);
 			transition: transform 0.3s ease 0s;
-
-			@media (max-width: 31.25rem) {
-				padding-inline: 1rem;
-			}
 		}
 	}
 }
@@ -398,9 +394,6 @@ body {
 
 			@media (max-width: 61.9988rem) {
 				padding-inline: 1.5rem;
-			}
-			@media (max-width: 31.25rem) {
-				padding-inline: 1rem;
 			}
 		}
 		@media (max-width: 75rem) {

@@ -498,11 +498,6 @@ body {
     transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   }
 }
-@media (max-width: 43.6875rem) and (max-width: 31.25rem) {
-  .header__mobile-body {
-    padding-inline: 1rem;
-  }
-}
 
 @media (min-width: 43.75rem) and (max-width: 75rem) {
   .header-menu {
@@ -575,11 +570,6 @@ body {
 @media (min-width: 43.75rem) and (max-width: 75rem) and (max-width: 61.9988rem) {
   .header-menu__list {
     padding-inline: 1.5rem;
-  }
-}
-@media (min-width: 43.75rem) and (max-width: 75rem) and (max-width: 31.25rem) {
-  .header-menu__list {
-    padding-inline: 1rem;
   }
 }
 @media (max-width: 75rem) {
