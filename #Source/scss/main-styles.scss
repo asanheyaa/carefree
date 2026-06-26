@@ -1174,13 +1174,9 @@ body {
 		@media (any-hover: hover) {
 			&:hover {
 				.content-home-partners__partner-logo {
-					opacity: 0;
-					visibility: hidden;
+					filter: grayscale(0%) opacity(1);
 				}
-				.content-home-partners__partner-logo.--on-hover {
-					opacity: 1;
-					visibility: visible;
-				}
+				
 			}
 		}
 	}
@@ -1189,18 +1185,8 @@ body {
 		align-items: center;
 		justify-content: center;
 		transition: all 0.3s ease 0s;
-
-		&.--on-hover {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 50%;
-			left: 50%;
-			z-index: 10;
-			transform: translate(-50%, -50%);
-			opacity: 0;
-			visibility: hidden;
-		}
+		 filter: grayscale(150%) opacity(0.3);
+		
 	}
 
 	&__nav {
@@ -1709,3 +1695,4 @@ body {
 		}
 	}
 }
+

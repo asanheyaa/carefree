@@ -1578,12 +1578,8 @@ body {
 }
 @media (any-hover: hover) {
   .content-home-partners__slide-wrapper:hover .content-home-partners__partner-logo {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .content-home-partners__slide-wrapper:hover .content-home-partners__partner-logo.--on-hover {
-    opacity: 1;
-    visibility: visible;
+    -webkit-filter: grayscale(0%) opacity(1);
+            filter: grayscale(0%) opacity(1);
   }
 }
 .content-home-partners__partner-logo {
@@ -1598,19 +1594,8 @@ body {
           justify-content: center;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-.content-home-partners__partner-logo.--on-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
+  -webkit-filter: grayscale(150%) opacity(0.3);
+          filter: grayscale(150%) opacity(0.3);
 }
 .content-home-partners .swiper-nav__button {
   -webkit-box-flex: 0;
