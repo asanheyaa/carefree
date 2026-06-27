@@ -215,6 +215,15 @@ body {
   }
 }
 
+img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .button {
   font-weight: 500;
   font-size: 1.125rem;
@@ -2385,10 +2394,20 @@ body {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   isolation: isolate;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 767.98px) {
   .body-categories-hero__content {
     padding: 1.5rem;
+  }
+}
+@media (any-hover: hover) {
+  .body-categories-hero__content:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.3);
   }
 }
 .body-categories-hero__icon {

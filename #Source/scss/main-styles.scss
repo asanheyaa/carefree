@@ -111,6 +111,13 @@ body {
 	}
 }
 
+img{
+	width: auto;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
 .button {
 	font-weight: 500;
 	font-size: 1.125rem;
@@ -807,7 +814,7 @@ body {
 			margin-bottom: 1.25rem;
 		}
 		@media (max-width: 630px) {
-			@include svgSizes( 40, 40);
+			@include svgSizes(40, 40);
 		}
 	}
 
@@ -825,7 +832,7 @@ body {
 		@media (max-width: 39.375rem) {
 			font-size: 1.25rem;
 			flex: 1 1 auto;
-			display:flex;
+			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
@@ -1755,6 +1762,7 @@ body {
 		}
 	}
 }
+
 .body-categories-hero {
 	@media (max-width: 767.98px) {
 		margin-right: -24px;
@@ -1791,8 +1799,16 @@ body {
 		will-change: backdrop-filter, transform;
 		transform: translateZ(0);
 		isolation: isolate;
+		transition: all 0.3s ease 0s;
 		@media (min-width: 767.98px) {
 			padding: 1.5rem;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: rgba(255, 255, 255, 0.1);
+				border-color: rgba(255, 255, 255, 0.2);
+				box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.3);
+			}
 		}
 	}
 
