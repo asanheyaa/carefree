@@ -1,24 +1,28 @@
 // homepage
 
-const homeDestinationSwiper = document.querySelector('.content-home-destinations__swiper');
-if (homeDestinationSwiper) {
-	const swiper = new Swiper(homeDestinationSwiper, {
-		slidesPerView:'auto',
-		spaceBetween: 0,
-		observer: true,
-		observeParents: true,
-		resizeObserver: true,
-		navigation: {
-			nextEl: '.content-home-destinations__button-next',
-			prevEl: '.content-home-destinations__button-prev',
-		},
-		speed: 500,
-		pagination: {
-			el: '.content-home-destinations__pagination',
-			type: 'bullets',
-			clickable: true,
-		},
+const categorySwipers = document.querySelectorAll('.content-category__swiper');
+if (categorySwipers) {
+	categorySwipers.forEach(categorySwiper => {
+		const perentElement = categorySwiper.closest('.category')
+		const swiper = new Swiper(categorySwiper, {
+			slidesPerView: 'auto',
+			spaceBetween: 0,
+			observer: true,
+			observeParents: true,
+			resizeObserver: true,
+			navigation: {
+				nextEl: perentElement.querySelector('.content-category__button-next'),
+				prevEl: perentElement.querySelector('.content-category__button-prev'),
+			},
+			speed: 500,
+			pagination: {
+				el: categorySwiper.querySelector('.content-category__pagination'),
+				type: 'bullets',
+				clickable: true,
+			},
+		});
 	});
+
 }
 
 const homePartnersSwiper = document.querySelector('.content-home-partners__swiper');
@@ -107,7 +111,7 @@ if (homeReviewsSwiper) {
 		speed: 500,
 
 		breakpoints: {
-		
+
 			767: {
 				slidesPerView: 2.37,
 				spaceBetween: 60,
@@ -125,4 +129,20 @@ if (homeReviewsSwiper) {
 		},
 	});
 
+}
+
+
+// categories page
+const categoriesHeroSwiper = document.querySelector('.body-categories-hero__swiper');
+if (categoriesHeroSwiper) {
+	const swiper = new Swiper(categoriesHeroSwiper, {
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		observer: true,
+		observeParents: true,
+		resizeObserver: true,
+
+		speed: 500,
+
+	});
 }
