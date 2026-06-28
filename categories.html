@@ -9,7 +9,7 @@
         content="40+ years of travel experience. Get custom, personally curated journeys at the same price as booking direct. Enjoy seamless travel with just one point of contact.">
 
     <link rel='stylesheet' href='css/swiper-bundle.min.css' media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
     <title>Expertly Planned Journeys & Custom Travel Planning | The Carefree Travel</title>
 </head>
 
@@ -110,7 +110,7 @@
                                         <h2 class="body-categories-hero__title">
                                             River Cruises
                                         </h2>
-                                        <button class="body-categories-hero__button">
+                                        <div class="body-categories-hero__button">
                                             <span class="body-categories-hero__button-text">
                                                 Explore
                                             </span>
@@ -119,7 +119,7 @@
                                                     <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                                                 </svg>
                                             </span>
-                                        </button>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class='body-categories-hero__slide swiper-slide'>
@@ -133,7 +133,7 @@
                                         <h2 class="body-categories-hero__title">
                                             Ocean Cruises
                                         </h2>
-                                        <button class="body-categories-hero__button">
+                                        <div class="body-categories-hero__button">
                                             <span class="body-categories-hero__button-text">
                                                 Explore
                                             </span>
@@ -142,7 +142,7 @@
                                                     <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                                                 </svg>
                                             </span>
-                                        </button>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class='body-categories-hero__slide swiper-slide'>
@@ -156,7 +156,7 @@
                                         <h2 class="body-categories-hero__title">
                                             USA Cruises
                                         </h2>
-                                        <button class="body-categories-hero__button">
+                                        <div class="body-categories-hero__button">
                                             <span class="body-categories-hero__button-text">
                                                 Explore
                                             </span>
@@ -165,7 +165,7 @@
                                                     <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                                                 </svg>
                                             </span>
-                                        </button>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class='body-categories-hero__slide swiper-slide'>
@@ -179,7 +179,7 @@
                                         <h2 class="body-categories-hero__title">
                                             Cruise Lines
                                         </h2>
-                                        <button class="body-categories-hero__button">
+                                        <div class="body-categories-hero__button">
                                             <span class="body-categories-hero__button-text">
                                                 Explore
                                             </span>
@@ -188,7 +188,7 @@
                                                     <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                                                 </svg>
                                             </span>
-                                        </button>
+                                        </div>
                                     </a>
                                 </div>
 
@@ -197,1023 +197,1069 @@
                     </div>
                 </div>
             </section>
-            <section class='category' aria-labelledby='category-title'>
-                <div class='category__container'>
-                    <div class="category__header">
-                        <h2 class="category__title title" id="category-title">
-                            Popular Cruises
+            <div class="categories">
+                <section class='category category-alt' aria-labelledby='category-title-popular'>
+                    <div class='category__container'>
+                        <div class="category__header">
+                            <h2 class="category__title title" id="category-title-popular">
+                                Popular Cruises
+                            </h2>
+                            <div class="category__actions">
+                                <div class="category__nav swiper-nav">
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
+                                        aria-label="Previous slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-next content-category__button-next"
+                                        aria-label="Next slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-category">
+                            <div class='content-category__swiper swiper'>
+                                <div class='content-category__wrapper swiper-wrapper'>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_01-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_01-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_01.webp"
+                                                            type="image/webp" width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_01.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Coastal charm</div>
+                                            </div>
+                                            <h3 class="content-category__title">Danube River</h3>
+                                            <div class="content-category__description">Danube River</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_02-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_02-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_02.webp"
+                                                            type="image/webp" width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_02.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Seaside allure</div>
+                                            </div>
+                                            <h3 class="content-category__title">Emerald River Cruise</h3>
+                                            <div class="content-category__description">Emerald River Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_03-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_03-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_03.webp"
+                                                            type="image/webp" width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_03.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Tranquil shores</div>
+                                            </div>
+                                            <h3 class="content-category__title">Azure River Adventure</h3>
+                                            <div class="content-category__description">Azure River Adventure</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_04-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_04-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_04.webp"
+                                                            type="image/webp" width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_04.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Enchanting escape</div>
+                                            </div>
+                                            <h3 class="content-category__title">Golden River Journey</h3>
+                                            <div class="content-category__description">Golden River Journey</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_01-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_01-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_01.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_01.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Coastal charm</div>
+                                            </div>
+                                            <h3 class="content-category__title">Danube River</h3>
+                                            <div class="content-category__description">Danube River</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_02-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_02-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_02.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_02.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Seaside allure</div>
+                                            </div>
+                                            <h3 class="content-category__title">Emerald River Cruise</h3>
+                                            <div class="content-category__description">Emerald River Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_03-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_03-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_03.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_03.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Tranquil shores</div>
+                                            </div>
+                                            <h3 class="content-category__title">Azure River Adventure</h3>
+                                            <div class="content-category__description">Azure River Adventure</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_04-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/popular/popular-image_04-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/popular/popular-image_04.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/popular/popular-image_04.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Enchanting escape</div>
+                                            </div>
+                                            <h3 class="content-category__title">Golden River Journey</h3>
+                                            <div class="content-category__description">Golden River Journey</div>
+                                        </a>
+                                    </div>
+                
+                
+                                </div>
+                                <div class="content-category__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='category category-alt' aria-labelledby='category-title-ocean'>
+                    <div class='category__container'>
+                        <div class="category__header">
+                            <h2 class="category__title title" id="category-title-ocean">
+                                Ocean Cruises
+                            </h2>
+                            <div class="category__actions">
+                                <div class="category__nav swiper-nav">
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
+                                        aria-label="Previous slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-next content-category__button-next"
+                                        aria-label="Next slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-category">
+                            <div class='content-category__swiper swiper'>
+                                <div class='content-category__wrapper swiper-wrapper'>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_01-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_01-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_01.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_01.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Oceanic beauty</div>
+                                            </div>
+                                            <h3 class="content-category__title">Caribbean Cruise</h3>
+                                            <div class="content-category__description">Caribbean Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_02-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_02-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_02.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_02.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Breezy coastal vibes</div>
+                                            </div>
+                                            <h3 class="content-category__title">Azure Waves Cruise</h3>
+                                            <div class="content-category__description">Azure Waves Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_03-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_03-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_03.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_03.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Peaceful coastlines</div>
+                                            </div>
+                                            <h3 class="content-category__title">Coral Reef Expedition</h3>
+                                            <div class="content-category__description">Baja California Sur, Mexico</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_04-mobile.webp"
+                                                            type="image/webp" width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_04-tablet.webp"
+                                                            type="image/webp" width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_04.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_04.jpg" alt="destination"
+                                                            width="322" height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Charming retreat</div>
+                                            </div>
+                                            <h3 class="content-category__title">Mediterranean Paradise Voyage</h3>
+                                            <div class="content-category__description">South Aegean, Greece</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_01-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_01-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_01.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_01.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Oceanic beauty</div>
+                                            </div>
+                                            <h3 class="content-category__title">Caribbean Cruise</h3>
+                                            <div class="content-category__description">Caribbean Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_02-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_02-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_02.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_02.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Breezy coastal vibes</div>
+                                            </div>
+                                            <h3 class="content-category__title">Azure Waves Cruise</h3>
+                                            <div class="content-category__description">Azure Waves Cruise</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_03-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_03-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_03.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_03.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Peaceful coastlines</div>
+                                            </div>
+                                            <h3 class="content-category__title">Coral Reef Expedition</h3>
+                                            <div class="content-category__description">Baja California Sur, Mexico</div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_04-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/ocean/ocean-image_04-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/ocean/ocean-image_04.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/ocean/ocean-image_04.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">Charming retreat</div>
+                                            </div>
+                                            <h3 class="content-category__title">Mediterranean Paradise Voyage</h3>
+                                            <div class="content-category__description">South Aegean, Greece</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-category__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='category category-alt' aria-labelledby='category-title-usa'>
+                    <div class='category__container'>
+                        <div class="category__header">
+                            <h2 class="category__title title" id="category-title-usa">
+                                USA Cruises
+                            </h2>
+                            <div class="category__actions">
+                                <div class="category__nav swiper-nav">
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
+                                        aria-label="Previous slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button"
+                                        class="swiper-nav__button swiper-nav__button-next content-category__button-next"
+                                        aria-label="Next slide">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-category">
+                            <div class='content-category__swiper swiper'>
+                                <div class='content-category__wrapper swiper-wrapper'>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_01-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_01-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_01.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_01.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Picturesque shores
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Mississippi Cruise
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Pacific Northwest, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_02-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_02-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_02.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_02.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Nautical elegance
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Mississippi River Adventure
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Mississippi River Adventure
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_03-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_03-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_03.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_03.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Calm seaside retreats
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Ohio River Odyssey
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Ohio River Odyssey, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_04-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_04-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_04.webp" type="image/webp"
+                                                            width="322" height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_04.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Dreamy coastal escape
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Tennessee River Escape
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Tennessee River Escape, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_01-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_01-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_01.webp" type="image/webp" width="322"
+                                                            height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_01.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Picturesque shores
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Mississippi Cruise
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Pacific Northwest, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_02-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_02-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_02.webp" type="image/webp" width="322"
+                                                            height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_02.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Nautical elegance
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Mississippi River Adventure
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Mississippi River Adventure
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_03-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_03-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_03.webp" type="image/webp" width="322"
+                                                            height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_03.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Calm seaside retreats
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Ohio River Odyssey
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Ohio River Odyssey, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class='content-category__slide swiper-slide'>
+                                        <a href="" class="content-category__slide-wrapper">
+                                            <div class="content-category__visual">
+                                                <div class="content-category__image ibg">
+                                                    <picture>
+                                                        <source media="(max-width: 390px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_04-mobile.webp" type="image/webp"
+                                                            width="240" height="135">
+                                                        <source media="(max-width: 744px)"
+                                                            srcset="img/categories-page/categories/usa/usa-image_04-tablet.webp" type="image/webp"
+                                                            width="300" height="168">
+                                                        <source srcset="img/categories-page/categories/usa/usa-image_04.webp" type="image/webp" width="322"
+                                                            height="180">
+                                                        <img src="img/categories-page/categories/usa/usa-image_04.jpg" alt="destination" width="322"
+                                                            height="180" loading="lazy">
+                                                    </picture>
+                                                </div>
+                                                <div class="content-category__category">
+                                                    Dreamy coastal escape
+                                                </div>
+                                            </div>
+                                            <h3 class="content-category__title">
+                                                Tennessee River Escape
+                                            </h3>
+                                            <div class="content-category__description">
+                                                Tennessee River Escape, USA
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-category__pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <section class='home-tips' aria-labelledby='home-tips-title'>
+            <div class='home-tips__container'>
+                <div class="home-tips__body">
+                    <div class="home-tips__image">
+                        <picture>
+                            <source media="(max-width: 390px)" srcset="img/homepage/tips/tip-image_01-mobile.webp"
+                                type="image/webp" width="390" height="112">
+                            <source media="(max-width: 735px)" srcset="img/homepage/tips/tip-image_01-table-alt.webp"
+                                type="image/webp" width="380" height="112">
+                            <source media="(max-width: 1200px)" srcset="img/homepage/tips/tip-image_01-tablet.webp"
+                                type="image/webp" width="125" height="112">
+                            <source srcset="img/homepage/tips/tip-image_01.webp" type="image/webp" width="380" height="153">
+                            <img src="img/homepage/tips/tip-image_01-tablet.jpg" alt="home-tips" loading="lazy" width="380"
+                                height="153">
+                        </picture>
+                    </div>
+                    <div class="home-tips__info">
+                        <div class="home-tips__icon">
+                            <svg>
+                                <use xlink:href='img/icons/icons-sprite.svg#home-tips-icon_01'></use>
+                            </svg>
+                        </div>
+                        <div class="home-tips__details">
+                            <h2 class="home-tips__title" id="home-tips-title">
+                                Trips for Seniors
+                            </h2>
+                            <div class="home-tips__subtitle">
+                                Discover the world, at your own pace
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="home-tips__button button">
+                        Learn More
+                    </a>
+                </div>
+        
+            </div>
+        </section>
+        <section class='home-partners' aria-labelledby='home-partners-title'>
+            <div class='home-partners__container'>
+                <div class="home-partners__header">
+                    <h2 class="home-partners__title title" id="home-partners-title">
+                        Our Trusted Travel Partners
+                    </h2>
+                    <div class="home-partners__subtitle">
+                        No matter where you are in your planning journey, we’ve got you covered
+                    </div>
+                </div>
+                <div class="content-home-partners">
+                    <button type="button" class="swiper-nav__button swiper-nav__button-prev content-home-partners__button-prev"
+                        aria-label="Previous slide">
+                        <svg>
+                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                        </svg>
+                    </button>
+                    <div class="content-home-partners__body">
+                        <div class='content-home-partners__swiper swiper'>
+                            <div class='content-home-partners__wrapper swiper-wrapper'>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_01_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_02_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_03_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_04_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_05_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_13_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_14_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_15_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_16_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_17_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_18_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_19_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_06_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_07_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_08_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_09_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_10_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_11_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_12_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_20_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_21_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_22_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_23_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class='content-home-partners__slide swiper-slide'>
+                                    <a href="" class="content-home-partners__slide-wrapper">
+                                        <div class="content-home-partners__partner-logo">
+                                            <img src="img/homepage/partners/Partner_24_on-hover.png" width="224" height="100"
+                                                loading="lazy" alt="partner">
+                                        </div>
+                                    </a>
+                                </div>
+        
+                            </div>
+                            <div class="content-home-partners__pagination pagination"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="swiper-nav__button swiper-nav__button-next content-home-partners__button-next"
+                        aria-label="Next slide">
+                        <svg>
+                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        
+        </section>
+        <section class='home-benefits' aria-labelledby='home-benefits-title'>
+            <div class='home-benefits__container'>
+                <div class="home-benefits__body">
+                    <div class="home-benefits__info">
+                        <h2 class="home-benefits__title" id="home-benefits-title">
+                            Why The Carefree Traveler
                         </h2>
-                        <div class="category__actions">
-
-                            <div class="category__nav swiper-nav">
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
-                                    aria-label="Previous slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-next content-category__button-next"
-                                    aria-label="Next slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+        
                     </div>
-                    <div class="content-category">
-                        <div class='content-category__swiper swiper'>
-                            <div class='content-category__wrapper swiper-wrapper'>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_01-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_01-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_01.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_01.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Coastal charm</div>
-                                        </div>
-                                        <h3 class="content-category__title">Danube River</h3>
-                                        <div class="content-category__description">Danube River</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_02-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_02-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_02.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_02.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Seaside allure</div>
-                                        </div>
-                                        <h3 class="content-category__title">Emerald River Cruise</h3>
-                                        <div class="content-category__description">Emerald River Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_03-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_03-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_03.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_03.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Tranquil shores</div>
-                                        </div>
-                                        <h3 class="content-category__title">Azure River Adventure</h3>
-                                        <div class="content-category__description">Azure River Adventure</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_04-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_04-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_04.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_04.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Enchanting escape</div>
-                                        </div>
-                                        <h3 class="content-category__title">Golden River Journey</h3>
-                                        <div class="content-category__description">Golden River Journey</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_01-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_01-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_01.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_01.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Coastal charm</div>
-                                        </div>
-                                        <h3 class="content-category__title">Danube River</h3>
-                                        <div class="content-category__description">Danube River</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_02-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_02-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_02.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_02.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Seaside allure</div>
-                                        </div>
-                                        <h3 class="content-category__title">Emerald River Cruise</h3>
-                                        <div class="content-category__description">Emerald River Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_03-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_03-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_03.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_03.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Tranquil shores</div>
-                                        </div>
-                                        <h3 class="content-category__title">Azure River Adventure</h3>
-                                        <div class="content-category__description">Azure River Adventure</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_04-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/popular/popular-image_04-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/popular/popular-image_04.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/popular/popular-image_04.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Enchanting escape</div>
-                                        </div>
-                                        <h3 class="content-category__title">Golden River Journey</h3>
-                                        <div class="content-category__description">Golden River Journey</div>
-                                    </a>
-                                </div>
-                               
-                        
-                            </div>
-                            <div class="content-category__pagination pagination"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class='category' aria-labelledby='category-title'>
-                <div class='category__container'>
-                    <div class="category__header">
-                        <h2 class="category__title title" id="category-title">
-                            Ocean Cruises
-                        </h2>
-                        <div class="category__actions">
-
-                            <div class="category__nav swiper-nav">
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
-                                    aria-label="Previous slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-next content-category__button-next"
-                                    aria-label="Next slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-category">
-                        <div class='content-category__swiper swiper'>
-                            <div class='content-category__wrapper swiper-wrapper'>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_01-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_01-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_01.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_01.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Oceanic beauty</div>
-                                        </div>
-                                        <h3 class="content-category__title">Caribbean Cruise</h3>
-                                        <div class="content-category__description">Caribbean Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_02-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_02-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_02.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_02.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Breezy coastal vibes</div>
-                                        </div>
-                                        <h3 class="content-category__title">Azure Waves Cruise</h3>
-                                        <div class="content-category__description">Azure Waves Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_03-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_03-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_03.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_03.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Peaceful coastlines</div>
-                                        </div>
-                                        <h3 class="content-category__title">Coral Reef Expedition</h3>
-                                        <div class="content-category__description">Baja California Sur, Mexico</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_04-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_04-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_04.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_04.jpg" alt="destination"
-                                                        width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Charming retreat</div>
-                                        </div>
-                                        <h3 class="content-category__title">Mediterranean Paradise Voyage</h3>
-                                        <div class="content-category__description">South Aegean, Greece</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_01-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_01-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_01.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_01.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Oceanic beauty</div>
-                                        </div>
-                                        <h3 class="content-category__title">Caribbean Cruise</h3>
-                                        <div class="content-category__description">Caribbean Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_02-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_02-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_02.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_02.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Breezy coastal vibes</div>
-                                        </div>
-                                        <h3 class="content-category__title">Azure Waves Cruise</h3>
-                                        <div class="content-category__description">Azure Waves Cruise</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_03-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_03-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_03.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_03.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Peaceful coastlines</div>
-                                        </div>
-                                        <h3 class="content-category__title">Coral Reef Expedition</h3>
-                                        <div class="content-category__description">Baja California Sur, Mexico</div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_04-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/ocean/ocean-image_04-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/ocean/ocean-image_04.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/ocean/ocean-image_04.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">Charming retreat</div>
-                                        </div>
-                                        <h3 class="content-category__title">Mediterranean Paradise Voyage</h3>
-                                        <div class="content-category__description">South Aegean, Greece</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="content-category__pagination pagination"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class='category' aria-labelledby='category-title'>
-                <div class='category__container'>
-                    <div class="category__header">
-                        <h2 class="category__title title" id="category-title">
-                            USA Cruises
-                        </h2>
-                        <div class="category__actions">
-
-                            <div class="category__nav swiper-nav">
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
-                                    aria-label="Previous slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-next content-category__button-next"
-                                    aria-label="Next slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-category">
-                        <div class='content-category__swiper swiper'>
-                            <div class='content-category__wrapper swiper-wrapper'>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_01-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_01-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_01.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_01.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Picturesque shores
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Mississippi Cruise
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Pacific Northwest, USA
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_02-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_02-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_02.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_02.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Nautical elegance
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Mississippi River Adventure
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Mississippi River Adventure
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_03-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_03-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_03.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_03.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Calm seaside retreats
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Ohio River Odyssey
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Ohio River Odyssey, USA
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_04-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_04-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_04.webp" type="image/webp"
-                                                        width="322" height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_04.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Dreamy coastal escape
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Tennessee River Escape
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Tennessee River Escape, USA
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_01-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_01-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_01.webp" type="image/webp" width="322"
-                                                        height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_01.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Picturesque shores
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Mississippi Cruise
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Pacific Northwest, USA
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_02-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_02-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_02.webp" type="image/webp" width="322"
-                                                        height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_02.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Nautical elegance
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Mississippi River Adventure
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Mississippi River Adventure
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_03-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_03-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_03.webp" type="image/webp" width="322"
-                                                        height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_03.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Calm seaside retreats
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Ohio River Odyssey
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Ohio River Odyssey, USA
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_04-mobile.webp" type="image/webp"
-                                                        width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/categories-page/categories/usa/usa-image_04-tablet.webp" type="image/webp"
-                                                        width="300" height="168">
-                                                    <source srcset="img/categories-page/categories/usa/usa-image_04.webp" type="image/webp" width="322"
-                                                        height="180">
-                                                    <img src="img/categories-page/categories/usa/usa-image_04.jpg" alt="destination" width="322"
-                                                        height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Dreamy coastal escape
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Tennessee River Escape
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Tennessee River Escape, USA
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="content-category__pagination pagination"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class='home-tips' aria-labelledby='home-tips-title'>
-                <div class='home-tips__container'>
-                    <div class="home-tips__body">
-                        <div class="home-tips__image">
-                            <picture>
-                                <source media="(max-width: 390px)" srcset="img/homepage/tips/tip-image_01-mobile.webp"
-                                    type="image/webp">
-                                <source media="(max-width: 735px)"
-                                    srcset="img/homepage/tips/tip-image_01-table-alt.webp" type="image/webp">
-                                <source media="(max-width: 1200px)" srcset="img/homepage/tips/tip-image_01-tablet.webp"
-                                    type="image/webp">
-                                <source srcset="img/homepage/tips/tip-image_01.webp" type="image/webp">
-                                <img src="img/homepage/tips/tip-image_01-tablet.jpg" alt="home-tips" loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="home-tips__info">
-                            <div class="home-tips__icon">
+                    <div class="home-benefits__items">
+                        <div class="home-benefits__item">
+                            <div class="home-benefits__icon">
                                 <svg>
-                                    <use xlink:href='img/icons/icons-sprite.svg#home-tips-icon_01'></use>
+                                    <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_01'></use>
                                 </svg>
                             </div>
-                            <div class="home-tips__details">
-                                <h2 class="home-tips__title" id="home-tips-title">
-                                    Trips for Seniors
-                                </h2>
-                                <div class="home-tips__subtitle">
-                                    Discover the world, at your own pace
-                                </div>
+                            <div class="home-benefits__description">
+                                White-glove service with peace of mind travel
                             </div>
                         </div>
-                        <a href="" class="home-tips__button button">
-                            Learn More
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-            <section class='home-partners' aria-labelledby='home-partners-title'>
-                <div class='home-partners__container'>
-                    <div class="home-partners__header">
-                        <h2 class="home-partners__title title" id="home-partners-title">
-                            Our Trusted Travel Partners
-                        </h2>
-                        <div class="home-partners__subtitle">
-                            No matter where you are in your planning journey, we’ve got you covered
+                        <div class="home-benefits__item">
+                            <div class="home-benefits__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_02'></use>
+                                </svg>
+                            </div>
+                            <div class="home-benefits__description">
+                                Exclusive offers and member perks
+                            </div>
+                        </div>
+                        <div class="home-benefits__item">
+                            <div class="home-benefits__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_03'></use>
+                                </svg>
+                            </div>
+                            <div class="home-benefits__description">
+                                Member of leading travel organizations
+                            </div>
+                        </div>
+                        <div class="home-benefits__item">
+                            <div class="home-benefits__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_04'></use>
+                                </svg>
+                            </div>
+                            <div class="home-benefits__description">
+                                Personalised support every step of the way
+                            </div>
                         </div>
                     </div>
-                    <div class="content-home-partners">
-                        <button type="button"
-                            class="swiper-nav__button swiper-nav__button-prev content-home-partners__button-prev"
+                </div>
+            </div>
+        </section>
+        <section class='home-reviews' aria-labelledby='home-reviews-title'>
+            <div class='home-reviews__container'>
+                <div class="home-reviews__header">
+                    <h2 class="home-reviews__title title" id="home-reviews-title">
+                        What Our Travelers Say
+                    </h2>
+                    <div class="home-reviews__nav swiper-nav">
+                        <button type="button" class="swiper-nav__button swiper-nav__button-prev home-reviews__button-prev"
                             aria-label="Previous slide">
                             <svg>
                                 <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
                             </svg>
                         </button>
-                        <div class="content-home-partners__body">
-                            <div class='content-home-partners__swiper swiper'>
-                                <div class='content-home-partners__wrapper swiper-wrapper'>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_01_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_02_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_03_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_04_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_05_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_13_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_14_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_15_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_16_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_17_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_18_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_19_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_06_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_07_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_08_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_09_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_10_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_11_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_12_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_20_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_21_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_22_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_23_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div class='content-home-partners__slide swiper-slide'>
-                                        <a href="" class="content-home-partners__slide-wrapper">
-                                            <div class="content-home-partners__partner-logo">
-                                                <img src="img/homepage/partners/Partner_24_on-hover.png" loading="lazy"
-                                                    alt="partner">
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="content-home-partners__pagination pagination"></div>
-                            </div>
-                        </div>
-                        <button type="button"
-                            class="swiper-nav__button swiper-nav__button-next content-home-partners__button-next"
+                        <button type="button" class="swiper-nav__button swiper-nav__button-next home-reviews__button-next"
                             aria-label="Next slide">
                             <svg>
                                 <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
@@ -1221,187 +1267,108 @@
                         </button>
                     </div>
                 </div>
-
-            </section>
-            <section class='home-benefits' aria-labelledby='home-benefits-title'>
-                <div class='home-benefits__container'>
-                    <div class="home-benefits__body">
-                        <div class="home-benefits__info">
-                            <h2 class="home-benefits__title" id="home-benefits-title">
-                                Why The Carefree Traveler
-                            </h2>
-
-                        </div>
-                        <div class="home-benefits__items">
-                            <div class="home-benefits__item">
-                                <div class="home-benefits__icon">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_01'></use>
-                                    </svg>
-                                </div>
-                                <div class="home-benefits__description">
-                                    White-glove service with peace of mind travel
+                <div class="content-home-reviews">
+                    <div class='content-home-reviews__swiper swiper'>
+                        <div class='content-home-reviews__wrapper swiper-wrapper'>
+                            <div class='content-home-reviews__slide swiper-slide'>
+                                <div class="content-home-reviews__body">
+                                    <div class="content-home-reviews__text">
+                                        <p>
+                                            “Carefree Traveler planned the perfect cruise for us. Every detail was
+                                            handled with care and professionalism. We can’t
+                                            wait to book again!”
+                                        </p>
+                                    </div>
+                                    <div class="content-home-reviews__name">
+                                        — Susan R., Carefree AZ
+                                    </div>
                                 </div>
                             </div>
-                            <div class="home-benefits__item">
-                                <div class="home-benefits__icon">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_02'></use>
-                                    </svg>
-                                </div>
-                                <div class="home-benefits__description">
-                                    Exclusive offers and member perks
-                                </div>
-                            </div>
-                            <div class="home-benefits__item">
-                                <div class="home-benefits__icon">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_03'></use>
-                                    </svg>
-                                </div>
-                                <div class="home-benefits__description">
-                                    Member of leading travel organizations
+                            <div class='content-home-reviews__slide swiper-slide'>
+                                <div class="content-home-reviews__body">
+                                    <div class="content-home-reviews__text">
+                                        <p>
+                                            “Our cruise experience with Carefree Traveler was unforgettable! Every
+                                            aspect was meticulously organized, making our
+                                            journey seamless and enjoyable. We’re eager to plan our next adventure!”
+                                        </p>
+                                    </div>
+                                    <div class="content-home-reviews__name">
+                                        — Leslie Alexander
+                                    </div>
                                 </div>
                             </div>
-                            <div class="home-benefits__item">
-                                <div class="home-benefits__icon">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_04'></use>
-                                    </svg>
-                                </div>
-                                <div class="home-benefits__description">
-                                    Personalised support every step of the way
+                            <div class='content-home-reviews__slide swiper-slide'>
+                                <div class="content-home-reviews__body">
+                                    <div class="content-home-reviews__text">
+                                        <p>
+                                            “Thanks to Carefree Traveler, our cruise was a dream come true! Their
+                                            attention to detail and expert planning made
+                                            everything perfect. We can’t wait to sail again!
+                                        </p>
+                                    </div>
+                                    <div class="content-home-reviews__name">
+                                        — Esther Howard
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="content-home-reviews__pagination pagination"></div>
                     </div>
                 </div>
-            </section>
-            <section class='home-reviews' aria-labelledby='home-reviews-title'>
-                <div class='home-reviews__container'>
-                    <div class="home-reviews__header">
-                        <h2 class="home-reviews__title title" id="home-reviews-title">
-                            What Our Travelers Say
-                        </h2>
-                        <div class="home-reviews__nav swiper-nav">
-                            <button type="button"
-                                class="swiper-nav__button swiper-nav__button-prev home-reviews__button-prev"
-                                aria-label="Previous slide">
-                                <svg>
-                                    <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                </svg>
-                            </button>
-                            <button type="button"
-                                class="swiper-nav__button swiper-nav__button-next home-reviews__button-next"
-                                aria-label="Next slide">
-                                <svg>
-                                    <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                </svg>
-                            </button>
-                        </div>
+            </div>
+        </section>
+        <section class='home-contacts' aria-labelledby='home-contacts-title'>
+            <div class='home-contacts__container'>
+                <div class="home-contacts__body">
+                    <h2 class="home-contacts__title title" id="home-contacts-title">
+                        Visit Us in Carefree, AZ
+                    </h2>
+                    <div class="home-contacts__subtitle">
+                        We’re here to help you plan your next adventure with confidence and ease
                     </div>
-                    <div class="content-home-reviews">
-                        <div class='content-home-reviews__swiper swiper'>
-                            <div class='content-home-reviews__wrapper swiper-wrapper'>
-                                <div class='content-home-reviews__slide swiper-slide'>
-                                    <div class="content-home-reviews__body">
-                                        <div class="content-home-reviews__text">
-                                            <p>
-                                                “Carefree Traveler planned the perfect cruise for us. Every detail was
-                                                handled with care and professionalism. We can’t
-                                                wait to book again!”
-                                            </p>
-                                        </div>
-                                        <div class="content-home-reviews__name">
-                                            — Susan R., Carefree AZ
-                                        </div>
-                                    </div>
+                    <ul class="home-contacts__list">
+                        <li class="home-contacts__item">
+                            <a href="https://www.google.com/maps?ll=33.82764,-111.924443&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=4912040851892428307"
+                                target="_blank" class="home-contacts__link">
+                                <div class="home-contacts__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#location'></use>
+                                    </svg>
                                 </div>
-                                <div class='content-home-reviews__slide swiper-slide'>
-                                    <div class="content-home-reviews__body">
-                                        <div class="content-home-reviews__text">
-                                            <p>
-                                                “Our cruise experience with Carefree Traveler was unforgettable! Every
-                                                aspect was meticulously organized, making our
-                                                journey seamless and enjoyable. We’re eager to plan our next adventure!”
-                                            </p>
-                                        </div>
-                                        <div class="content-home-reviews__name">
-                                            — Leslie Alexander
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='content-home-reviews__slide swiper-slide'>
-                                    <div class="content-home-reviews__body">
-                                        <div class="content-home-reviews__text">
-                                            <p>
-                                                “Thanks to Carefree Traveler, our cruise was a dream come true! Their
-                                                attention to detail and expert planning made
-                                                everything perfect. We can’t wait to sail again!
-                                            </p>
-                                        </div>
-                                        <div class="content-home-reviews__name">
-                                            — Esther Howard
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content-home-reviews__pagination pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class='home-contacts' aria-labelledby='home-contacts-title'>
-                <div class='home-contacts__container'>
-                    <div class="home-contacts__body">
-                        <h2 class="home-contacts__title title" id="home-contacts-title">
-                            Visit Us in Carefree, AZ
-                        </h2>
-                        <div class="home-contacts__subtitle">
-                            We’re here to help you plan your next adventure with confidence and ease
-                        </div>
-                        <ul class="home-contacts__list">
-                            <li class="home-contacts__item">
-                                <a href="https://www.google.com/maps?ll=33.82764,-111.924443&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=4912040851892428307"
-                                    target="_blank" class="home-contacts__link">
-                                    <div class="home-contacts__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#location'></use>
-                                        </svg>
-                                    </div>
-                                    <address class="home-contacts__text">
-                                        7171 East Cave Creek Road Suite APO Box 1419Carefree, AZ 85377 USA
-                                    </address>
-                                </a>
-                            </li>
-                            <li class="home-contacts__item">
-                                <a href="tel:4804883111" class="home-contacts__link">
-                                    <div class="home-contacts__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#tel'></use>
-                                        </svg>
-                                    </div>
-                                    <div class="home-contacts__text">
-                                        480-488-3111
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="home-contacts__footer">
-                            <a href="" class="home-contacts__button button">
-                                Request Consultation
+                                <address class="home-contacts__text">
+                                    7171 East Cave Creek Road Suite APO Box 1419Carefree, AZ 85377 USA
+                                </address>
                             </a>
-                        </div>
-                    </div>
-                    <div class="home-contacts__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6628.859845677185!2d-111.9296551!3d33.8270218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7ec6bee23ecf%3A0x442b132133415e13!2sThe%20Carefree%20Traveler!5e0!3m2!1sen!2sus!4v1781703920436!5m2!1sen!2sus"
-                            width="600" height="450" style="border:0;" allowfullscreen=""
-                            title="Interactive map of The Carefree Traveler location" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </li>
+                        <li class="home-contacts__item">
+                            <a href="tel:4804883111" class="home-contacts__link">
+                                <div class="home-contacts__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#tel'></use>
+                                    </svg>
+                                </div>
+                                <div class="home-contacts__text">
+                                    480-488-3111
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="home-contacts__footer">
+                        <a href="" class="home-contacts__button button">
+                            Request Consultation
+                        </a>
                     </div>
                 </div>
-            </section>
+                <div class="home-contacts__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6628.859845677185!2d-111.9296551!3d33.8270218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7ec6bee23ecf%3A0x442b132133415e13!2sThe%20Carefree%20Traveler!5e0!3m2!1sen!2sus!4v1781703920436!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen=""
+                        title="Interactive map of The Carefree Traveler location" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -1463,8 +1430,7 @@
         </footer>
     </div>
     <script defer src='js/swiper-bundle.min.js'></script>
-    <script defer src='js/swipers-inits.js'></script>
+    <script defer src='js/swipers-inits.min.js'></script>
     <script src="js/script.min.js"></script>
 </body>
-
 </html>

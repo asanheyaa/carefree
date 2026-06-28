@@ -111,7 +111,7 @@ body {
 	}
 }
 
-img{
+img {
 	width: auto;
 	height: auto;
 	object-fit: cover;
@@ -850,14 +850,29 @@ img{
 }
 
 //==========================================================================================================================================================
+.categories{
+	& > *{
+		&:not(:last-child){
+			border-bottom: 1px solid #e2dfda;
 
+			}
+	}
+}
 .category {
 	padding-block: 4rem;
-	@media (max-width: 43.75rem) {
+	@media (max-width: 47.9988rem) {
 		padding-block: 3.75rem;
 	}
 	@media (max-width: 28.125rem) {
 		padding-block: 2.75rem;
+	}
+	&-alt {
+		@media (max-width: 47.9988rem) {
+			padding-block: 2.75rem;
+		}
+		// .content-category__category{
+		// 	font-size: 16px;
+		// }
 	}
 	&__container {
 	}

@@ -1209,16 +1209,25 @@ img {
   }
 }
 
+.categories > *:not(:last-child) {
+  border-bottom: 1px solid #e2dfda;
+}
+
 .category {
   padding-block: 4rem;
 }
-@media (max-width: 43.75rem) {
+@media (max-width: 47.9988rem) {
   .category {
     padding-block: 3.75rem;
   }
 }
 @media (max-width: 28.125rem) {
   .category {
+    padding-block: 2.75rem;
+  }
+}
+@media (max-width: 47.9988rem) {
+  .category-alt {
     padding-block: 2.75rem;
   }
 }
