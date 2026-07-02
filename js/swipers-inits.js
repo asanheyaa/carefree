@@ -10,6 +10,7 @@ if (categorySwipers) {
 			observer: true,
 			observeParents: true,
 			resizeObserver: true,
+			loop:true,
 			navigation: {
 				nextEl: perentElement.querySelector('.content-category__button-next'),
 				prevEl: perentElement.querySelector('.content-category__button-prev'),
