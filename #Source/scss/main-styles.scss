@@ -2476,19 +2476,19 @@ img {
 }
 
 .fslightbox-container {
-	background: rgb(5, 17, 36, 0.9);
+	background: rgb(5, 17, 36, 0.9)!important;
 }
 
 .fslightboxsn {
-	font-family: var(--second-family);
+	font-family: var(--second-family)!important;
 }
 .fslightbox-slide-btn {
-	background: rgb(5, 17, 36, 1);
+	background: rgb(5, 17, 36, 1)!important;
 	border-radius: 50%;
 	transition: background 0.3s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background: var(--darkblue-400);
+			background: var(--darkblue-400)!important;
 		}
 	}
 	&::after {
@@ -2500,7 +2500,7 @@ img {
 			no-repeat center center;
 	}
 	.fslightbox-svg {
-		display: none;
+		display: none!important;
 	}
 }
 
