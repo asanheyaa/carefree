@@ -10,7 +10,7 @@ if (categorySwipers) {
 			observer: true,
 			observeParents: true,
 			resizeObserver: true,
-			loop:true,
+			loop: true,
 			navigation: {
 				nextEl: perentElement.querySelector('.content-category__button-next'),
 				prevEl: perentElement.querySelector('.content-category__button-prev'),
@@ -26,85 +26,135 @@ if (categorySwipers) {
 
 }
 
-const homePartnersSwiper = document.querySelector('.content-home-partners__swiper');
+// const homePartnersSwiper = document.querySelector('.content-home-partners__swiper');
 
-if (homePartnersSwiper) {
-	let swiperInstance = null;
+// if (homePartnersSwiper) {
+// 	let swiperInstance = null;
 
-	function initPartnersSwiper() {
-		const width = window.innerWidth;
-		let slides = 2;
-		let gap = 4;
+// 	function initPartnersSwiper() {
+// 		const width = window.innerWidth;
+// 		let slides = 2;
+// 		let gap = 4;
 
-		if (width >= 768) {
-			slides = 5;
-			gap = 20;
-		} else if (width >= 600) {
-			slides = 4;
-			gap = 12;
-		} else if (width >= 450) {
-			slides = 3;
-			gap = 12;
-		}
+// 		if (width >= 768) {
+// 			slides = 5;
+// 			gap = 20;
+// 		} else if (width >= 600) {
+// 			slides = 4;
+// 			gap = 12;
+// 		} else if (width >= 450) {
+// 			slides = 3;
+// 			gap = 12;
+// 		}
 
-		const config = {
-			slidesPerView: slides,
-			spaceBetween: gap,
-			grid: {
-				rows: 2,
-				fill: "row"
-			},
-			observer: true,
-			observeParents: true,
-			resizeObserver: true,
-			navigation: {
-				nextEl: '.content-home-partners__button-next',
-				prevEl: '.content-home-partners__button-prev',
-			},
+// 		const config = {
+// 			slidesPerView: slides,
+// 			spaceBetween: gap,
+// 			grid: {
+// 				rows: 2,
+// 				fill: "row"
+// 			},
+// 			observer: true,
+// 			observeParents: true,
+// 			resizeObserver: true,
+// 			navigation: {
+// 				nextEl: '.content-home-partners__button-next',
+// 				prevEl: '.content-home-partners__button-prev',
+// 			},
+// 			speed: 500,
+// 			pagination: {
+// 				el: '.content-home-partners__pagination',
+// 				type: 'bullets',
+// 				clickable: true,
+// 			}
+// 		};
+
+// 		if (swiperInstance) {
+// 			swiperInstance.destroy(true, true);
+// 		}
+
+// 		swiperInstance = new Swiper(homePartnersSwiper, config);
+// 	}
+
+// 	initPartnersSwiper();
+
+// 	let currentSlidesCount = swiperInstance ? swiperInstance.params.slidesPerView : 2;
+// 	let resizeTimeout;
+
+// 	window.addEventListener('resize', () => {
+// 		clearTimeout(resizeTimeout);
+// 		resizeTimeout = setTimeout(() => {
+// 			const width = window.innerWidth;
+// 			let targetSlides = 2;
+
+// 			if (width >= 768) targetSlides = 5;
+// 			else if (width >= 600) targetSlides = 4;
+// 			else if (width >= 450) targetSlides = 3;
+
+// 			if (targetSlides !== currentSlidesCount) {
+// 				currentSlidesCount = targetSlides;
+// 				initPartnersSwiper();
+// 			}
+// 		}, 100);
+// 	});
+
+// }
+
+const homePartnersSwipers = document.querySelectorAll('.content-home-partners__swiper');
+
+if (homePartnersSwipers.length > 0) {
+	let firstSwiper = null;
+	let secondSwiper = null;
+
+	homePartnersSwipers.forEach(function (homePartnersSwiper, i) {
+		const isFirst = i === 0;
+
+		const swiperConfig = {
+			slidesPerView: 2,
+			spaceBetween: 12,
+		
+			loop: true,
 			speed: 500,
-			pagination: {
-				el: '.content-home-partners__pagination',
-				type: 'bullets',
-				clickable: true,
+			breakpoints: {
+				768: { slidesPerView: 5, spaceBetween: 20 },
+				600: { slidesPerView: 4, spaceBetween: 12 },
+				450: { slidesPerView: 3, spaceBetween: 12 },
 			}
 		};
 
-		if (swiperInstance) {
-			swiperInstance.destroy(true, true);
+		if (isFirst) {
+			swiperConfig.navigation = {
+				nextEl: '.content-home-partners__button-next',
+				prevEl: '.content-home-partners__button-prev',
+			};
+		} else {
+			swiperConfig.pagination = {
+				el: '.content-home-partners__pagination',
+				type: 'bullets',
+				clickable: true,
+			};
 		}
 
-		swiperInstance = new Swiper(homePartnersSwiper, config);
-	}
+		const partnersSwiper = new Swiper(homePartnersSwiper, swiperConfig);
 
-	initPartnersSwiper();
-
-	let currentSlidesCount = swiperInstance ? swiperInstance.params.slidesPerView : 2;
-	let resizeTimeout;
-
-	window.addEventListener('resize', () => {
-		clearTimeout(resizeTimeout);
-		resizeTimeout = setTimeout(() => {
-			const width = window.innerWidth;
-			let targetSlides = 2;
-
-			if (width >= 768) targetSlides = 5;
-			else if (width >= 600) targetSlides = 4;
-			else if (width >= 450) targetSlides = 3;
-
-			if (targetSlides !== currentSlidesCount) {
-				currentSlidesCount = targetSlides;
-				initPartnersSwiper();
-			}
-		}, 100);
+		if (isFirst) {
+			firstSwiper = partnersSwiper;
+		} else {
+			secondSwiper = partnersSwiper;
+		}
 	});
 
+	if (firstSwiper && secondSwiper) {
+		firstSwiper.controller.control = secondSwiper;
+		secondSwiper.controller.control = firstSwiper;
+	}
 }
-
 const homeReviewsSwiper = document.querySelector('.content-home-reviews__swiper');
 if (homeReviewsSwiper) {
 	const swiper = new Swiper(homeReviewsSwiper, {
 		slidesPerView: 1.3,
 		spaceBetween: 44,
+		loop: true,
 		navigation: {
 			nextEl: '.home-reviews__button-next',
 			prevEl: '.home-reviews__button-prev',
@@ -147,3 +197,52 @@ if (categoriesHeroSwiper) {
 
 	});
 }
+
+// single product page
+
+const mobileSwiperContainers = document.querySelectorAll('[data-mobile-only-swiper]');
+
+if (mobileSwiperContainers) {
+	const mobileSwipers = [];
+
+	function toggleMobileSwipers() {
+		const isMobile = window.innerWidth <= 480;
+
+		mobileSwiperContainers.forEach((container, index) => {
+			if (mobileSwipers[index]) {
+				if (!isMobile) {
+					mobileSwipers[index].destroy(true, true);
+					mobileSwipers[index] = null;
+				}
+				return;
+			}
+
+			if (isMobile) {
+				const swiper = new Swiper(container, {
+					slidesPerView: 'auto',
+					loop: true,
+					// autoplay: {
+					// 	delay: 5000,
+					// },
+					speed: 800,
+					pagination: {
+						el: `.${container.classList[0]} .pagination`,
+						clickable: true,
+					},
+					
+				});
+
+				mobileSwipers[index] = swiper;
+			}
+		});
+	}
+
+	toggleMobileSwipers();
+
+	let resizeTimer;
+	window.addEventListener('resize', () => {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(toggleMobileSwipers, 120);
+	});
+}
+

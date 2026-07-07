@@ -23,6 +23,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex: 0 0 $width + px;
 	svg {
 		width: $width  + px;
 		height: $height  + px;
