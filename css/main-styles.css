@@ -2897,7 +2897,7 @@ img {
 }
 
 .single-product-enabling {
-  padding-top: 5.875rem;
+  padding-top: 15.625rem;
   padding-bottom: 0.125rem;
 }
 @media (min-width: 40.625rem) {
@@ -2913,7 +2913,7 @@ img {
 }
 .single-product-enabling__container {
   position: relative;
-  max-width: 75.25rem;
+  max-width: 1204px;
 }
 @media (min-width: 40.625rem) {
   .single-product-enabling__container {
@@ -2926,9 +2926,9 @@ img {
   padding: 2rem;
   position: relative;
   z-index: 2;
-  -webkit-transform: translate(0, -3.875rem);
-      -ms-transform: translate(0, -3.875rem);
-          transform: translate(0, -3.875rem);
+  -webkit-transform: translate(0, -15.625rem);
+      -ms-transform: translate(0, -15.625rem);
+          transform: translate(0, -15.625rem);
   margin-inline: auto;
   max-width: 17.375rem;
 }

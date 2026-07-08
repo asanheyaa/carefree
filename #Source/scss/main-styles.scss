@@ -2164,7 +2164,7 @@ img {
 //==========================================================================================================================================================
 
 .single-product-enabling {
-	padding-top: 5.875rem;
+	padding-top: 15.625rem;
 	padding-bottom: 0.125rem;
 	@media (min-width: 40.625rem) {
 		padding-block: 2.75rem;
@@ -2175,7 +2175,7 @@ img {
 	}
 	&__container {
 		position: relative;
-		max-width: 75.25rem;
+		max-width: 1204px;
 		@media (min-width:40.625rem) {
 			padding-block: 2rem;
 			
@@ -2188,7 +2188,7 @@ img {
 		padding: 2rem;
 		position: relative;
 		z-index: 2;
-		transform: translate(0, -3.875rem);
+		transform: translate(0, -15.625rem);
 		margin-inline: auto;
 		max-width: 17.375rem;
 		@media (min-width:30rem) {
