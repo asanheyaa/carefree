@@ -4654,11 +4654,6 @@ img {
     padding-top: 138px;
   }
 }
-@media (min-width: 850px) {
-  .contact-us-popup {
-    overflow: hidden;
-  }
-}
 .contact-us-popup__body {
   display: -webkit-box;
   display: -ms-flexbox;

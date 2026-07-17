@@ -350,18 +350,19 @@ if (popups) {
 
 const scrollingPopups = document.querySelectorAll('[data-scrolling-popup]');
 if (scrollingPopups) {
-	const header = document.querySelector('.header');
+	const header = document.querySelector('.header'),
+		footer = document.querySelector('.footer');
 	window.addEventListener('scroll', (e) => {
 		let scrollDistance = window.scrollY
-		let showPopup = scrollDistance > header.offsetHeight ? true : false;
-		console.log();
-		scrollingPopups.forEach(scrollingPopup => {
-			if (showPopup) {
-				scrollingPopup.classList.add('_active')
-			} else {
-				scrollingPopup.classList.remove('_active')
-			}
-		});
+		let showScrollHeader = scrollDistance > header.offsetHeight ? true : false,
+			isScrollToFooter = scrollDistance + window.innerHeight > footer.offsetTop ? true : false
+				scrollingPopups.forEach(scrollingPopup => {
+					if (showScrollHeader && !isScrollToFooter) {
+						scrollingPopup.classList.add('_active')
+					} else {
+						scrollingPopup.classList.remove('_active')
+					}
+				});
 
 	})
 }
