@@ -3462,40 +3462,58 @@ img {
 	top: 0;
 	left: 0;
 	z-index: 200;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgb(23, 36, 58, 0.6);
-	padding: 32px 0;
-	overflow: auto;
+	
+	// 1. ВИПРАВЛЕНО: Прибираємо display: flex, який блокував скрол
+	// display: flex; 
+	// align-items: center;
+	// justify-content: center;
+
+	background: rgba(23, 36, 58, 0.6);
+	padding: 20px 10px;
+	
+	// 2. ГОЛОВНЕ: Дозволяємо всьому попапу скролитися по вертикалі
+	overflow-y: auto; 
+	-webkit-overflow-scrolling: touch; /* Плавний скрол для старих iPhone */
+	
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.5s ease 0s;
+	
 	&._active {
 		opacity: 1;
 		visibility: visible;
 	}
-	@media (min-width: 30rem) {
-		padding: 2.5rem 1rem;
+	
+	@media (min-width: 480px) {
+		padding: 20px 16px;
 	}
-	@media (min-width: 43.75rem) {
-		padding-top: 8.625rem;
+	@media (min-width: 850px) {
+		padding: 40px 20px;
 	}
-	@media (min-width: 53.125rem) {
-		// overflow: hidden;
-		padding: 1.25rem;
-	}
+
 	&__body {
+		// 3. ВИПРАВЛЕНО: Центруємо елемент на екрані без допомоги батьківського флексу
+		position: relative;
+		margin: 20px auto; /* Створює автоматичні відступи зліва/справа та 20px згори/знизу */
+		
 		display: flex;
 		border-radius: 12px;
 		overflow: hidden;
 		flex-direction: column-reverse;
+		width: 100%;
 		max-width: 500px;
-		margin: auto;
+		
+		background-color: #fff; /* Переконайтеся, що є фон, щоб не просвічувався задній план */
+
+		// Запобігаємо багу, коли flex намагається стиснути сам попап по висоті
+		flex-shrink: 0; 
+
 		@media (min-width: 850px) {
-			margin: 0;
 			max-width: 1030px;
 			flex-direction: row;
+			
+			// На десктопах, якщо хочете ідеальне центрування по вертикалі (коли попап точно влазить в екран):
+			margin: 10vh auto; 
 		}
 	}
 
