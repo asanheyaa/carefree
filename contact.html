@@ -9,7 +9,8 @@
         content="40+ years of travel experience. Get custom, personally curated journeys at the same price as booking direct. Enjoy seamless travel with just one point of contact.">
 
     <link rel='stylesheet' href='css/swiper-bundle.min.css' media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel='stylesheet' href='css/flatpickr.min.css' media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/main-styles.min.css">
     <title>Expertly Planned Journeys & Custom Travel Planning | The Carefree Travel</title>
 </head>
 
@@ -75,102 +76,107 @@
             </div>
         </header>
         <main class="page">
-            <section class='home-hero' aria-labelledby='home-hero-title'>
-                <div class="home-hero__back ibg section-back">
+            <section class='contact-hero' aria-labelledby='contact-hero-title'>
+                <div class=" section-back section-back-other ibg">
                     <picture>
-                        <source media="(max-width: 390px)" srcset="img/homepage/hero/hero-back-mobile.webp"
-                            type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/homepage/hero/hero-back-mobile-alt.webp"
-                            type="image/webp">
-                        <source media="(max-width: 744px)" srcset="img/homepage/hero/hero-back-tablet.webp"
-                            type="image/webp">
-                        <source srcset="img/homepage/hero/hero-back.webp" type="image/webp">
-                        <img src="img/homepage/hero/hero-back.jpg" loading="eager" fetchpriority="high"
-                            aria-hidden="true" alt="hero-back">
+                        <source media="(max-width: 390px)" srcset="img/contact-page/hero/hero-back-mobile.webp"
+                            type="image/webp" width="390" height="862">
+                        <source media="(max-width: 744px)" srcset="img/contact-page/hero/hero-back-tablet.webp"
+                            type="image/webp" width="744" height="512">
+                        <source media="(max-width: 1440px)" srcset="img/contact-page/hero/hero-back.webp"
+                            type="image/webp" width="1440" height="658">
+                        <source srcset="img/contact-page/hero/hero-back-large.webp" type="image/webp" width="1440"
+                            height="658">
+                        <img src="img/contact-page/hero/hero-back.jpg" width="1440" height="658" loading="eager"
+                            fetchpriority="high" aria-hidden="true" alt="hero-back">
                     </picture>
                 </div>
-                <div class='home-hero__container'>
-                    <div class="home-hero__info">
-                        <h1 class="home-hero__title">
-                            Expertly Planned Journeys. Personally Curated.
+                <div class='contact-hero__container contact-hero__container-alt'>
+                    <div class="contact-hero__info">
+                        <h1 class="contact-hero__title" id="contact-hero__title">
+                            Visit our office or give our team of advisors a call 
                         </h1>
-                        <div class="home-hero__benefits">
-                            <ul class="home-hero__list">
-                                <li class="home-hero__item">
-                                    <div class="home-hero__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#home-hero-icon_01'></use>
-                                        </svg>
-                                    </div>
-                                    <div class="home-hero__text">
-                                        40+ Years of Experience
-                                    </div>
-                                </li>
-                                <li class="home-hero__item">
-                                    <div class="home-hero__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#home-hero-icon_02'></use>
-                                        </svg>
-                                    </div>
-                                    <div class="home-hero__text">
-                                        Same Price as Booking Direct
-                                    </div>
-                                </li>
-                                <li class="home-hero__item">
-                                    <div class="home-hero__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#home-hero-icon_03'></use>
-                                        </svg>
-                                    </div>
-                                    <div class="home-hero__text">
-                                        One Point of Contact
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="contact-hero__number">
+                            <span class="contact-hero__text">
+                                Call us:
+                            </span>
+                            <a href="tel:4804883111" class="contact-hero__link">
+                                480-488-3111
+                            </a>
                         </div>
-                        <a href="" class="home-hero__button button">
-                            Request Consultation
+                        <div class="contact-hero__schedule">
+                            <span class="contact-hero__row">
+                                Open 10:00a - 5:00p Monday - Friday
+                            </span>
+                            <span class="contact-hero__row">
+                                Saturday and Sunday by appointment
+                            </span>
+                        </div>
+                        <a href="" class="contact-hero__button button">
+                            Contact an Advisor
                         </a>
                     </div>
-                    <div class="card-home-hero">
-                        <a href="" class="card-home-hero__card blur-back">
-                            <div class="card-home-hero__image ibg">
-                                <picture>
-                                    <source media="(max-width: 390px)"
-                                        srcset="img/homepage/hero/hero-offer-image-mobile.webp" type="image/webp"
-                                        width="334" height="186">
-                                    <source media="(max-width: 744px)"
-                                        srcset="img/homepage/hero/hero-offer-image-tablet.webp" type="image/webp"
-                                        width="294" height="165">
-                                    <source srcset="img/homepage/hero/hero-offer-image.webp" type="image/webp"
-                                        width="416" height="233">
-                                    <img src="img/homepage/hero/hero-offer-image.jpg" width="416" height="233"
-                                        loading="eager" fetchpriority="high" alt="hero-offer-image">
-                                </picture>
-                            </div>
-                            <div class="card-home-hero__body">
-                                <h2 class="card-home-hero__title">
-                                    Cruise offers
-                                </h2>
-                                <div class="card-home-hero__subtitle">
-                                    Explore exclusive offers and set sail with confidence
+                    <div class="card-contact-hero blur-back blur-back-nh">
+                        <ul class="card-contact-hero__list">
+                            <li class="card-contact-hero__item">
+                                <div class="card-contact-hero__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#social-icon_02'></use>
+                                    </svg>
                                 </div>
-                                <div class="card-home-hero__button">
-                                    <span class="card-home-hero__text">
-                                        View course offers
-                                    </span>
-                                    <span class="card-home-hero__icon">
-                                        <svg>
-                                            <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                        </svg>
-                                    </span>
+                                <div class="card-contact-hero__info">
+                                    <h2 class="card-contact-hero__label">
+                                        Email Us
+                                    </h2>
+                                    <a href="mailto:info@carefreetraveler.com" class="card-contact-hero__link">
+                                        info@carefreetraveler.com
+                                    </a>
+                                    <div class="card-contact-hero__description">
+                                        We typically reply within one business day
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </li>
+                            <li class="card-contact-hero__item">
+                                <div class="card-contact-hero__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#location'></use>
+                                    </svg>
+                                </div>
+                                <div class="card-contact-hero__info">
+                                    <h2 class="card-contact-hero__label">
+                                        Visit Us in Carefree, AZ
+                                    </h2>
+                                    <a href="https://www.google.com/maps?ll=33.82764,-111.924443&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=4912040851892428307"
+                                        target="_blank" class="card-contact-hero__description">
+                                        <address class="card-contact-hero__address">
+                                            <span class="card-contact-hero__row">7171 East Cave Creek Road Suite
+                                                A</span>
+                                            <span class="card-contact-hero__row">PO Box 1419</span>
+                                            <span class="card-contact-hero__row">Carefree, AZ 85377 USA</span>
+                                        </address>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-contact-hero__item">
+                                <div class="card-contact-hero__logo">
+                                    <img src="img/main/logo-transparent-bg.png" alt="logo" width="82" height="42">
+                                </div>
+                                <div class="card-contact-hero__info">
+                                    <div class="card-contact-hero__description">
+                                        <span class="card-contact-hero__row">
+                                            Real People. Local Service.
+                                        </span>
+                                        <span class="card-contact-hero__row">
+                                            Visit our Carefree office or give us a call.
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            <div class="home-services">
+            <div class="home-services home-services-alt">
                 <div class="home-services__container">
                     <div class="home-services__items">
                         <article class="home-services__item">
@@ -254,318 +260,247 @@
                     </div>
                 </div>
             </div>
-            <section class='category' aria-labelledby='category-title'>
-                <div class='category__container'>
-                    <div class="category__header">
-                        <h2 class="category__title title" id="category-title">
-                            Popular Destinations
-                        </h2>
-                        <div class="category__actions">
-                            <a href="" class="category__button button button-secondary">
-                                View All
-                            </a>
-                            <div class="category__nav swiper-nav">
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-prev content-category__button-prev"
-                                    aria-label="Previous slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
-                                <button type="button"
-                                    class="swiper-nav__button swiper-nav__button-next content-category__button-next"
-                                    aria-label="Next slide">
-                                    <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow'></use>
-                                    </svg>
-                                </button>
+            <section class='contact' aria-labelledby='contact-title'>
+                <div class='contact__container'>
+                    <div class="contact__body">
+                        <header class="contact__header">
+                            <h2 class="contact__title" id="contact-title">
+                                Send Us a Message
+                            </h2>
+                            <div class="contact__subtitle">
+                                Fill out the form below and a travel advisor will be in touch to help you plan the
+                                perfect trip.
                             </div>
+                        </header>
+
+                        <div class="form-contact">
+                            <form action="#" class="form-contact__form" novalidate>
+                                <div class="form-contact__items">
+                                    <div class="form-contact__item form-contact__item-half">
+                                        <input type="text" name="First name" id="first_name" placeholder="First Name"
+                                            required class="form-contact__input">
+                                        <div class="form-contact__error-message">
+                                            Please enter your first name
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item form-contact__item-half">
+                                        <input type="text" name="Last name" id="last_name" placeholder="Last name"
+                                            required class="form-contact__input">
+                                        <div class="form-contact__error-message">
+                                            Please enter your last name
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item form-contact__item-tablet-half">
+                                        <input type="tel" name="Phone number" id="phone_number"
+                                            placeholder="+1 XXX XXX-XXXX" required class="form-contact__input">
+                                        <div class="form-contact__error-message">
+                                            Please enter your phone number
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item form-contact__item-tablet-half">
+                                        <input type="email" name="Email address" id="email" placeholder="Email address"
+                                            required class="form-contact__input">
+                                        <div class="form-contact__error-message">
+                                            Please enter your email address
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item form-contact__item-half">
+                                        <input type="number" name="Number of travelers" id="travelers_numb"
+                                            placeholder="Number of Travelers" required class="form-contact__input">
+                                        <div class="form-contact__error-message">
+                                            Please enter number of travelers
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item form-contact__item-half">
+                                        <div class="select" data-select-menu>
+                                            <input type="hidden" name="Type of trip" required data-select-hidden-input>
+                                            <button class="select__header" type="button" aria-label="Chose language"
+                                                data-select-menu-button>
+                                                <span class="select__value" data-select-menu-value>Type of trip</span>
+                                                <span class="select__arrow-icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#select-arrow'></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul class="select__body" data-select-menu-drop-down>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>Ocean Cruise</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>River Cruise</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>Small Group Land Tour</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>Custom Itinerary</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>I'm not sure/Undecided</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-contact__error-message">
+                                            Please select a trip type
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item">
+                                        <input type="date" name="Travel dates" id="travel_dates" required
+                                            placeholder="Select travel dates"
+                                            class="form-contact__input form-contact__input-dates">
+                                        <div class="form-contact__error-message">
+                                            Please select travel dates
+                                        </div>
+                                    </div>
+                                    <div class="form-contact__item">
+                                        <textarea name="message" id="message" placeholder="Any special requests?"
+                                            class="form-contact__input form-contact__input-textarea"
+                                            maxlength="150"></textarea>
+                                        <div class="form-contact__disclaimer">
+                                            *max 150 characters
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="form-contact__footer">
+                                    <button type="submit" class="form-contact__button button">
+                                        Contact Us
+                                    </button>
+                                    <div class="form-contact__message">
+                                        We’ll be in touch within one business day
+                                    </div>
+                                </footer>
+                            </form>
                         </div>
                     </div>
-                    <div class="content-category">
-                        <div class='content-category__swiper swiper'>
-                            <div class='content-category__wrapper swiper-wrapper'>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_01-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_01-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_01.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_01.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Coastal charm
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Victoria
-                                        </h3>
-                                        <div class="content-category__description">
-                                            British Columbia, Canada
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_02-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_02-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_02.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_02.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Coastal charm
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Puerto Vallarta
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Puerto Vallarta, Jalisco, Mexico
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_03-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_03-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_03.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_03.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Serene beaches
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Cabo San Lucas
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Baja California Sur, Mexico
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_04-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_04-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_04.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_04.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Romantic getaway
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Victoria
-                                        </h3>
-                                        <div class="content-category__description">
-                                            South Aegean, Greece
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_01-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_01-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_01.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_01.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Coastal charm
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Victoria
-                                        </h3>
-                                        <div class="content-category__description">
-                                            British Columbia, Canada
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_02-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_02-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_02.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_02.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Coastal charm
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Puerto Vallarta
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Puerto Vallarta, Jalisco, Mexico
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_03-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_03-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_03.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_03.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Serene beaches
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Cabo San Lucas
-                                        </h3>
-                                        <div class="content-category__description">
-                                            Baja California Sur, Mexico
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class='content-category__slide swiper-slide'>
-                                    <a href="" class="content-category__slide-wrapper">
-                                        <div class="content-category__visual">
-                                            <div class="content-category__image ibg">
-                                                <picture>
-                                                    <source media="(max-width: 390px)"
-                                                        srcset="img/homepage/destinations/destination-image_04-mobile.webp"
-                                                        type="image/webp" width="240" height="135">
-                                                    <source media="(max-width: 744px)"
-                                                        srcset="img/homepage/destinations/destination-image_04-tablet.webp"
-                                                        type="image/webp" width="300" height="168">
-                                                    <source srcset="img/homepage/destinations/destination-image_04.webp"
-                                                        type="image/webp" width="322" height="180">
-                                                    <img src="img/homepage/destinations/destination-image_04.jpg"
-                                                        alt="destination" width="322" height="180" loading="lazy">
-                                                </picture>
-                                            </div>
-                                            <div class="content-category__category">
-                                                Romantic getaway
-                                            </div>
-                                        </div>
-                                        <h3 class="content-category__title">
-                                            Victoria
-                                        </h3>
-                                        <div class="content-category__description">
-                                            South Aegean, Greece
-                                        </div>
-                                    </a>
-                                </div>
+                    <div class="content-contact">
+                        <header class="content-contact__header">
+                            <h3 class="content-contact__title">
+                                Why Use a Travel Advisor
+                            </h3>
+                            <div class="content-contact__subtitle">
+                                Our experienced travel advisors are passionate about creating unforgettable journeys and
+                                delivering exceptional
+                                service.
                             </div>
-                            <div class="content-category__pagination pagination"></div>
-                        </div>
-                    </div>
-                    <div class="category__footer">
-                        <a href="" class="category__mobile-button button button-secondary">
-                            View All
-                        </a>
+                        </header>
+                        <ul class="content-contact__list">
+                            <li class="content-contact__item">
+                                <div class="content-contact__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                    </svg>
+                                </div>
+                                <div class="content-contact__text">
+                                    Direct Operator Pricing
+                                </div>
+                            </li>
+                            <li class="content-contact__item">
+                                <div class="content-contact__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                    </svg>
+                                </div>
+                                <div class="content-contact__text">
+                                    Exclusive perks with your itinerary
+                                </div>
+                            </li>
+                            <li class="content-contact__item">
+                                <div class="content-contact__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                    </svg>
+                                </div>
+                                <div class="content-contact__text">
+                                    Personalized recommendations
+                                </div>
+                            </li>
+                            <li class="content-contact__item">
+                                <div class="content-contact__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                    </svg>
+                                </div>
+                                <div class="content-contact__text">
+                                    Expert knowledge & insider access
+                                </div>
+                            </li>
+                            <li class="content-contact__item">
+                                <div class="content-contact__icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                    </svg>
+                                </div>
+                                <div class="content-contact__text">
+                                    Support Before & During Your Trip
+                                </div>
+                            </li>
+                        </ul>
+                        <footer class="content-contact__footer">
+                            <div class="content-contact__row">
+                                <div class="content-contact__footer-icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#age'></use>
+                                    </svg>
+                                </div>
+                                <h4 class="content-contact__label">
+                                    Trusted for Over 40 Years
+                                </h4>
+                            </div>
+                            <div class="content-contact__description">
+                                Proudly serving Carefree, Cave Creek and upper Scottsdale with white-glove travel
+                                service since day one.
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </section>
-            <section class='home-tips' aria-labelledby='home-tips-title'>
-                <div class='home-tips__container'>
-                    <div class="home-tips__body">
-                        <div class="home-tips__image">
-                            <picture>
-                                <source media="(max-width: 390px)" srcset="img/homepage/tips/tip-image_01-mobile.webp"
-                                    type="image/webp" width="390" height="112">
-                                <source media="(max-width: 735px)"
-                                    srcset="img/homepage/tips/tip-image_01-table-alt.webp" type="image/webp" width="380"
-                                    height="112">
-                                <source media="(max-width: 1200px)" srcset="img/homepage/tips/tip-image_01-tablet.webp"
-                                    type="image/webp" width="125" height="112">
-                                <source srcset="img/homepage/tips/tip-image_01.webp" type="image/webp" width="380"
-                                    height="153">
-                                <img src="img/homepage/tips/tip-image_01-tablet.jpg" alt="home-tips" loading="lazy"
-                                    width="380" height="153">
-                            </picture>
+            <section class='team' aria-labelledby='team-title'>
+                <div class='team__container'>
+                    <header class="team__header">
+                        <h2 class="team__title title" id="team-title">
+                            Meet Your Carefree Traveler Team
+                        </h2>
+                        <div class="team__subtitle">
+                            We are based in Carefree, Arizona, and are proud to be serving Carefree, Cave Creek and
+                            North Scottsdale community. Come
+                            meet us in person!
                         </div>
-                        <div class="home-tips__info">
-                            <div class="home-tips__icon">
-                                <svg>
-                                    <use xlink:href='img/icons/icons-sprite.svg#home-tips-icon_01'></use>
-                                </svg>
+                    </header>
+                    <div class="team__body">
+                        <article class="team__item">
+                            <div class="team__photo">
+                                <picture>
+                                    <source srcset="img/contact-page/team/team-photo_01.webp" type="image/webp"
+                                        width="220" height="220">
+                                    <img src="img/contact-page/team/team-photo_01.jpg" width="220" height="220"
+                                        loading="lazy" alt="Gregory Newman photo">
+                                </picture>
                             </div>
-                            <div class="home-tips__details">
-                                <h2 class="home-tips__title" id="home-tips-title">
-                                    Trips for Seniors
-                                </h2>
-                                <div class="home-tips__subtitle">
-                                    Discover the world, at your own pace
-                                </div>
+                            <h3 class="team__name">
+                                Gregory Newman
+                            </h3>
+                            <div class="team__position">
+                                Owner & Travel Adviser
                             </div>
-                        </div>
-                        <a href="" class="home-tips__button button">
-                            Learn More
-                        </a>
+                        </article>
+                        <article class="team__item">
+                            <div class="team__photo">
+                                <picture>
+                                    <source srcset="img/contact-page/team/team-photo_02.webp" type="image/webp"
+                                        width="220" height="220">
+                                    <img src="img/contact-page/team/team-photo_02.jpg" width="220" height="220"
+                                        loading="lazy" alt="Kathy Mulder photo">
+                                </picture>
+                            </div>
+                            <h3 class="team__name">
+                                Kathy Mulder
+                            </h3>
+                            <div class="team__position">
+                                Manager & Senior Travel Advisor
+                            </div>
+                        </article>
                     </div>
-
                 </div>
             </section>
             <section class='home-partners' aria-labelledby='home-partners-title'>
@@ -633,56 +568,56 @@
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_13_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_13_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_14_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_14_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_15_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_15_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_16_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_16_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_17_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_17_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_18_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_18_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_19_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_19_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
@@ -695,60 +630,60 @@
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_06_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_06_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_07_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_07_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_08_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_08_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_09_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_09_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_10_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_10_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_11_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_11_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
-                                                    <img src="img/homepage/partners/Partner_12_on-hover.png" width="224" height="100" loading="lazy"
-                                                        alt="partner">
+                                                    <img src="img/homepage/partners/Partner_12_on-hover.png" width="224"
+                                                        height="100" loading="lazy" alt="partner">
                                                 </div>
                                             </a>
                                         </div>
-                                        
+
                                         <div class='content-home-partners__slide swiper-slide'>
                                             <a href="" class="content-home-partners__slide-wrapper">
                                                 <div class="content-home-partners__partner-logo partner">
@@ -1072,6 +1007,120 @@
             </div>
         </footer>
     </div>
+    <div class="contact-us-popup" data-popup data-clear-transition>
+        <div class="contact-us-popup__body" data-popup-wrapper>
+            <div class="contact-us-popup__info">
+                <div class='team team-alt'>
+                    <div class='team__container'>
+                        <header class="team__header">
+                            <h2 class="team__title title">
+                                Meet Our Travel Advisors
+                            </h2>
+                            <div class="team__subtitle">
+                            We are passionate about creating unforgettable journeys for our customers
+                            </div>
+                        </header>
+                        <div class="team__body">
+                            <article class="team__item">
+                                <div class="team__photo">
+                                    <picture>
+                                        <source srcset="img/contact-page/team/team-photo_01.webp" type="image/webp"
+                                            width="220" height="220">
+                                        <img src="img/contact-page/team/team-photo_01.jpg" width="220" height="220"
+                                            loading="lazy" alt="Gregory Newman photo">
+                                    </picture>
+                                </div>
+                                <h3 class="team__name">
+                                    Gregory Newman
+                                </h3>
+                               
+                            </article>
+                            <article class="team__item">
+                                <div class="team__photo">
+                                    <picture>
+                                        <source srcset="img/contact-page/team/team-photo_02.webp" type="image/webp"
+                                            width="220" height="220">
+                                        <img src="img/contact-page/team/team-photo_02.jpg" width="220" height="220"
+                                            loading="lazy" alt="Gregory Newman photo">
+                                    </picture>
+                                </div>
+                                <h3 class="team__name">
+                                    Kathy Mulder
+                                </h3>
+                               
+                            </article>
+                        </div>
+                        <footer class="team__footer">
+                            <div class="team__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#age'></use>
+                                </svg>
+                            </div>
+                            <div class="team__label">
+                                Personalized service trusted by Arizonans
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us-popup__banner">
+                <div class="contact-us-popup__back ibg">
+                    <picture>
+                        <source media="(max-width: 390px)" srcset="img/contact-page/contact-us-popup/back-mobile.webp" type="image/webp"
+                            width="390" height="416">
+                        <source media="(max-width: 744px)" srcset="img/contact-page/contact-us-popup/back-tablet.webp" type="image/webp"
+                            width="500" height="408">
+                        <source srcset="img/contact-page/contact-us-popup/back.webp" type="image/webp" width="500" height="546">
+                        <img src="img/contact-page/contact-us-popup/back.jpg" width="500" height="546" loading="lazy"
+                            aria-hidden="true" alt="popup back">
+                    </picture>
+                </div>
+                <button type="button" class="contact-us-popup__close-button" aria-label="close popup" data-popup-close>
+                    <svg>
+                        <use xlink:href='img/icons/icons-sprite.svg#close-icon'></use>
+                    </svg>
+                </button>
+                <div class="contact-us-popup__wrapper">
+                    <header class="contact-us-popup__header">
+                        <h2 class="contact-us-popup__title">
+                            Prefer to Plan in Person?
+                        </h2>
+                        <div class="contact-us-popup__subitle">
+                            Stop by our Carefree office - we’d love to help you plan your next trip.
+                        </div>
+                    </header>
+                    <div class="contact-us-popup__actions blur-back blur-back-nh">
+                        <a href="tel:4804883111" class="contact-us-popup__link">
+                            <div class="contact-us-popup__icon-tel">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#tel'></use>
+                                </svg>
+                            </div>
+                            <div class="contact-us-popup__text">
+                                480-488-3111
+                            </div>
+                        </a>
+                        <button type="button" data-copy-button aria-label="copy address" class="contact-us-popup__content">
+                            <span class="contact-us-popup__address" data-copy-text>
+                                7171 East Cave Creek Road Suite A, PO Box 1419 Carefree, AZ 85377 USA
+                            </span>
+                            <span class="contact-us-popup__copy-icons">
+                                <span  class="contact-us-popup__copy-icon">
+                                   <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#copy-icon'></use>
+                                   </svg>
+                                </span>
+                               
+                            </span>
+                        </button>
+                    </div>
+                    <a href="" class="contact-us-popup__button button button-white">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="proposal-popup" data-scrolling-popup>
         <div class="proposal-popup__body">
             <div class="proposal-popup__logo">
@@ -1086,7 +1135,8 @@
         </a>
     </div>
     <script defer src='js/swiper-bundle.min.js'></script>
-    <script defer src='js/swipers-inits.js'></script>
+    <script defer src='js/swipers-inits.min.js'></script>
+    <script src="js/flatpickr.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 
