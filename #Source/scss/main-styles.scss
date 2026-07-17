@@ -3462,58 +3462,40 @@ img {
 	top: 0;
 	left: 0;
 	z-index: 200;
-	
-	// 1. ВИПРАВЛЕНО: Прибираємо display: flex, який блокував скрол
-	// display: flex; 
-	// align-items: center;
-	// justify-content: center;
-
 	background: rgba(23, 36, 58, 0.6);
-	padding: 20px 10px;
-	
-	// 2. ГОЛОВНЕ: Дозволяємо всьому попапу скролитися по вертикалі
-	overflow-y: auto; 
-	-webkit-overflow-scrolling: touch; /* Плавний скрол для старих iPhone */
-	
+	padding: 2.5rem 0px;
+
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.5s ease 0s;
-	
+	display: flex;
 	&._active {
 		opacity: 1;
 		visibility: visible;
 	}
-	
+
 	@media (min-width: 480px) {
-		padding: 20px 16px;
+		padding: 2.5rem 1rem;
 	}
 	@media (min-width: 850px) {
-		padding: 40px 20px;
+		padding: 2.5rem 1.25rem;
 	}
 
 	&__body {
-		// 3. ВИПРАВЛЕНО: Центруємо елемент на екрані без допомоги батьківського флексу
 		position: relative;
-		margin: 20px auto; /* Створює автоматичні відступи зліва/справа та 20px згори/знизу */
-		
+		margin: auto;
 		display: flex;
-		border-radius: 12px;
+		border-radius: 0.75rem;
 		overflow: hidden;
 		flex-direction: column-reverse;
 		width: 100%;
-		max-width: 500px;
-		
-		background-color: #fff; /* Переконайтеся, що є фон, щоб не просвічувався задній план */
+		max-width: 31.25rem;
 
-		// Запобігаємо багу, коли flex намагається стиснути сам попап по висоті
-		flex-shrink: 0; 
-
-		@media (min-width: 850px) {
-			max-width: 1030px;
+		@media (min-width: 53.125rem) {
+			max-width: 62.5rem;
 			flex-direction: row;
-			
-			// На десктопах, якщо хочете ідеальне центрування по вертикалі (коли попап точно влазить в екран):
-			margin: 10vh auto; 
 		}
 	}
 
@@ -3556,17 +3538,17 @@ img {
 
 	&__close-button {
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 0.625rem;
+		right: 0.625rem;
 		margin-left: auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 10px;
+		padding: 0.625rem;
 		z-index: 10;
 		svg {
-			width: 24px;
-			height: 24px;
+			width: 1.5rem;
+			height: 1.5rem;
 		}
 		color: var(--primary-white);
 	}
