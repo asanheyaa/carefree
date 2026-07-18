@@ -219,27 +219,32 @@ function selectMenu() {
 
 selectMenu()
 
-const travelDates = document.querySelector('#travel_dates'),
-	configs = (element) => {
-		return {
+document.addEventListener('DOMContentLoaded', () => {
+	const travelDates = document.querySelector('#travel_dates');
+
+	if (travelDates) {
+
+		const today = new Date();
+		const firstDayOfCurrentMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+		flatpickr(travelDates, {
 			minDate: 'today',
-			monthSelectorType: 'static',
+			disableMobile: true,          
 			altInput: true,
-			disableMobile: "true",
-			mode: "range",
-			onOpen: () => {
-				element.parentElement.classList.add('_active')
+			plugins: [
+				new monthSelectPlugin({
+					shorthand: false,     
+					dateFormat: "m/Y",
+					altFormat: "F Y"
+				})
+			],
+			minDate: firstDayOfCurrentMonth,   
+			onChange: function (selectedDates, dateStr, instance) {
+				
+				instance.element.dispatchEvent(new Event('input'));
 			},
-			onClose: () => {
-				element.parentElement.classList.remove('_active')
-			},
-
-		}
+		});
 	}
-
-if (travelDates) {
-	flatpickr(travelDates, configs(travelDates));
-}
+});
 
 
 
@@ -251,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (!form) return;
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	const phoneRegex = /^\+?\d{1,4}?[\s.-]?\(?\d{1,3}?\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}$/
+	// const phoneRegex = /^\+?\d{1,4}?[\s.-]?\(?\d{1,3}?\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}$/
 	function isValidGlobalPhone(phone) {
 		const cleaned = phone.replace(/[^\d]/g, '');
 
@@ -278,6 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (parseInt(value, 10) <= 0) {
 				isValid = false;
 			}
+		} else if (input.id === 'travel_dates') {
+			input.addEventListener('input', () => validateField(input));
 		}
 
 		if (!isValid) {

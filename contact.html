@@ -10,12 +10,13 @@
 
     <link rel='stylesheet' href='css/swiper-bundle.min.css' media="print" onload="this.media='all'">
     <link rel='stylesheet' href='css/flatpickr.min.css' media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
     <link rel="stylesheet" href="css/main-styles.min.css">
     <title>Expertly Planned Journeys & Custom Travel Planning | The Carefree Travel</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper ">
         <header class="header">
             <div class="header__container">
                 <div class="header__logo">
@@ -112,7 +113,7 @@
                                 Saturday and Sunday by appointment
                             </span>
                         </div>
-                        <a href="" class="contact-hero__button button">
+                        <a href="#contact-form" class="contact-hero__button button">
                             Contact an Advisor
                         </a>
                     </div>
@@ -262,7 +263,7 @@
             </div>
             <section class='contact' aria-labelledby='contact-title'>
                 <div class='contact__container'>
-                    <div class="contact__body">
+                    <div class="contact__body" id="contact-form">
                         <header class="contact__header">
                             <h2 class="contact__title" id="contact-title">
                                 Send Us a Message
@@ -305,10 +306,46 @@
                                         </div>
                                     </div>
                                     <div class="form-contact__item form-contact__item-half">
-                                        <input type="number" name="Number of travelers" id="travelers_numb"
-                                            placeholder="Number of Travelers" required class="form-contact__input">
+
+                                        <div class="select" data-select-menu>
+                                            <input type="hidden" name="Number of Travelers" required
+                                                data-select-hidden-input>
+                                            <button class="select__header" type="button" aria-label="Chose language"
+                                                data-select-menu-button>
+                                                <span class="select__value" data-select-menu-value>Number of
+                                                    Travelers</span>
+                                                <span class="select__arrow-icon">
+                                                    <svg>
+                                                        <use xlink:href='img/icons/icons-sprite.svg#select-arrow'></use>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <ul class="select__body" data-select-menu-drop-down>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>1</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>2</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>3</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>4</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>5</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>6</span>
+                                                </li>
+                                                <li class="select__item" data-select-menu-option>
+                                                    <span>7+</span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                         <div class="form-contact__error-message">
-                                            Please enter number of travelers
+                                            Please select number of travelers
                                         </div>
                                     </div>
                                     <div class="form-contact__item form-contact__item-half">
@@ -346,11 +383,11 @@
                                         </div>
                                     </div>
                                     <div class="form-contact__item">
-                                        <input type="date" name="Travel dates" id="travel_dates" required
-                                            placeholder="Select travel dates"
+                                        <input type="text" name="Travel dates" id="travel_dates" required
+                                            placeholder="Planned travel month"
                                             class="form-contact__input form-contact__input-dates">
                                         <div class="form-contact__error-message">
-                                            Please select travel dates
+                                            Please select travel month
                                         </div>
                                     </div>
                                     <div class="form-contact__item">
@@ -364,7 +401,7 @@
                                 </div>
                                 <footer class="form-contact__footer">
                                     <button type="submit" class="form-contact__button button">
-                                        Contact Us
+                                        Submit Request
                                     </button>
                                     <div class="form-contact__message">
                                         We’ll be in touch within one business day
@@ -1017,7 +1054,7 @@
                                 Meet Our Travel Advisors
                             </h2>
                             <div class="team__subtitle">
-                            We are passionate about creating unforgettable journeys for our customers
+                                We are passionate about creating unforgettable journeys for our customers
                             </div>
                         </header>
                         <div class="team__body">
@@ -1033,7 +1070,7 @@
                                 <h3 class="team__name">
                                     Gregory Newman
                                 </h3>
-                               
+
                             </article>
                             <article class="team__item">
                                 <div class="team__photo">
@@ -1047,7 +1084,7 @@
                                 <h3 class="team__name">
                                     Kathy Mulder
                                 </h3>
-                               
+
                             </article>
                         </div>
                         <footer class="team__footer">
@@ -1066,11 +1103,12 @@
             <div class="contact-us-popup__banner">
                 <div class="contact-us-popup__back ibg">
                     <picture>
-                        <source media="(max-width: 390px)" srcset="img/contact-page/contact-us-popup/back-mobile.webp" type="image/webp"
-                            width="390" height="416">
-                        <source media="(max-width: 744px)" srcset="img/contact-page/contact-us-popup/back-tablet.webp" type="image/webp"
-                            width="500" height="408">
-                        <source srcset="img/contact-page/contact-us-popup/back.webp" type="image/webp" width="500" height="546">
+                        <source media="(max-width: 390px)" srcset="img/contact-page/contact-us-popup/back-mobile.webp"
+                            type="image/webp" width="390" height="416">
+                        <source media="(max-width: 744px)" srcset="img/contact-page/contact-us-popup/back-tablet.webp"
+                            type="image/webp" width="500" height="408">
+                        <source srcset="img/contact-page/contact-us-popup/back.webp" type="image/webp" width="500"
+                            height="546">
                         <img src="img/contact-page/contact-us-popup/back.jpg" width="500" height="546" loading="lazy"
                             aria-hidden="true" alt="popup back">
                     </picture>
@@ -1100,17 +1138,18 @@
                                 480-488-3111
                             </div>
                         </a>
-                        <button type="button" data-copy-button aria-label="copy address" class="contact-us-popup__content">
+                        <button type="button" data-copy-button aria-label="copy address"
+                            class="contact-us-popup__content">
                             <span class="contact-us-popup__address" data-copy-text>
                                 7171 East Cave Creek Road Suite A, PO Box 1419 Carefree, AZ 85377 USA
                             </span>
                             <span class="contact-us-popup__copy-icons">
-                                <span  class="contact-us-popup__copy-icon">
-                                   <svg>
-                                    <use xlink:href='img/icons/icons-sprite.svg#copy-icon'></use>
-                                   </svg>
+                                <span class="contact-us-popup__copy-icon">
+                                    <svg>
+                                        <use xlink:href='img/icons/icons-sprite.svg#copy-icon'></use>
+                                    </svg>
                                 </span>
-                               
+
                             </span>
                         </button>
                     </div>
@@ -1136,7 +1175,10 @@
     </div>
     <script defer src='js/swiper-bundle.min.js'></script>
     <script defer src='js/swipers-inits.min.js'></script>
-    <script src="js/flatpickr.min.js"></script>
+
+    <script defer src="js/flatpickr.min.js"></script>
+    <script defer src="js/flatpickr-monthselect.min.js"></script>
+
     <script src="js/script.min.js"></script>
 </body>
 
