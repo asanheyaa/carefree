@@ -941,19 +941,28 @@ img {
 			padding: 0;
 		}
 		& .home-services__icon {
-			@include svgSizes(40, 40);
+			@include svgSizes( 50, 50);
+			@media (min-width:30rem) {
+				@include svgSizes( 40, 40);
+			}
 		}
 		& .home-services__title {
 			color: var(--content-text-dark);
-			font-size: 1.125rem;
 			line-height: 150%;
+				font-size: 1.25rem;
+
 			margin-bottom: 0.75rem;
+			flex: 0 0 auto;
+			@media (min-width:30rem) {
+			font-size: 1.125rem;
+			}
 		}
 		& .home-services__text {
 			color: var(--content-text-dark);
 			font-size: 1rem;
 			line-height: 143%;
 			display: block;
+			
 		}
 	}
 	&__container {
