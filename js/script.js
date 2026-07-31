@@ -228,18 +228,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		const firstDayOfCurrentMonth = new Date(today.getFullYear(), today.getMonth(), 1);
 		flatpickr(travelDates, {
 			minDate: 'today',
-			disableMobile: true,          
+			disableMobile: true,
 			altInput: true,
 			plugins: [
 				new monthSelectPlugin({
-					shorthand: false,     
+					shorthand: false,
 					dateFormat: "m/Y",
 					altFormat: "F Y"
 				})
 			],
-			minDate: firstDayOfCurrentMonth,   
+			minDate: firstDayOfCurrentMonth,
 			onChange: function (selectedDates, dateStr, instance) {
-				
+
 				instance.element.dispatchEvent(new Event('input'));
 			},
 		});
@@ -323,7 +323,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
 			}
 		} else {
-			console.log('The form has been successfully validated and submitted!');
+			const successMesage = document.querySelector('.form-contact-success');
+			successMesage.classList.add('_active')
 		}
 	});
 });
@@ -338,10 +339,12 @@ const popups = document.querySelectorAll('[data-popup]');
 if (popups) {
 	popups.forEach(popup => {
 
-		setTimeout(() => {
-			popup.classList.add('_active')
-			document.body.classList.add('_lock')
-		}, 5000);
+		if (popup.dataset.popup === 'timeout') {
+			setTimeout(() => {
+				popup.classList.add('_active')
+				document.body.classList.add('_lock')
+			}, 5000);
+		}
 
 		popup.addEventListener('click', (e) => {
 			const target = e.target
@@ -363,13 +366,13 @@ if (scrollingPopups) {
 		let scrollDistance = window.scrollY
 		let showScrollHeader = scrollDistance > header.offsetHeight ? true : false,
 			isScrollToFooter = scrollDistance + window.innerHeight > footer.offsetTop ? true : false
-				scrollingPopups.forEach(scrollingPopup => {
-					if (showScrollHeader && !isScrollToFooter) {
-						scrollingPopup.classList.add('_active')
-					} else {
-						scrollingPopup.classList.remove('_active')
-					}
-				});
+		scrollingPopups.forEach(scrollingPopup => {
+			if (showScrollHeader && !isScrollToFooter) {
+				scrollingPopup.classList.add('_active')
+			} else {
+				scrollingPopup.classList.remove('_active')
+			}
+		});
 
 	})
 }

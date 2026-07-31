@@ -28,17 +28,17 @@
                     <div class="header__mobile-body" data-clear-transition>
                         <nav class='header-menu' data-clear-transition>
                             <ul class='header-menu__list' data-clear-transition>
-                                <li class='header-menu__item'>
+                                <li class='header-menu__item header-menu__item-hide'>
                                     <a href='categories.html' class='header-menu__link'>
                                         Cruises
                                     </a>
                                 </li>
-                                <li class='header-menu__item'>
+                                <li class='header-menu__item header-menu__item-hide'>
                                     <a href='' class='header-menu__link'>
                                         Tours
                                     </a>
                                 </li>
-                                <li class='header-menu__item'>
+                                <li class='header-menu__item header-menu__item-hide'>
                                     <a href='product-single-page.html' class='header-menu__link'>
                                         Destinations
                                     </a>
@@ -95,7 +95,7 @@
                 <div class='contact-hero__container contact-hero__container-alt'>
                     <div class="contact-hero__info">
                         <h1 class="contact-hero__title" id="contact-hero__title">
-                            Visit our office or give our team of advisors a call 
+                            Visit our office or give our advisors a call
                         </h1>
                         <div class="contact-hero__number">
                             <span class="contact-hero__text">
@@ -129,8 +129,11 @@
                                     <h2 class="card-contact-hero__label">
                                         Email Us
                                     </h2>
-                                    <a href="mailto:info@carefreetraveler.com" class="card-contact-hero__link">
-                                        info@carefreetraveler.com
+                                    <a href="mailto:gregory@carefreetraveler.com" class="card-contact-hero__link">
+                                        gregory@carefreetraveler.com
+                                    </a>
+                                    <a href="mailto:kathy@carefreetraveler.com" class="card-contact-hero__link">
+                                        kathy@carefreetraveler.com
                                     </a>
                                     <div class="card-contact-hero__description">
                                         We typically reply within one business day
@@ -203,7 +206,7 @@
                                 River Cruises
                             </h2>
                             <div class="home-services__text">
-                                Scenic journeys that flow
+                                Scenic journeys
                             </div>
                         </article>
                         <article class="home-services__item">
@@ -216,7 +219,7 @@
                                 Small Group Tours
                             </h2>
                             <div class="home-services__text">
-                                Travel together, your way
+                                Expertly coornated adventures
                             </div>
                         </article>
                         <article class="home-services__item">
@@ -229,7 +232,7 @@
                                 Hotels & Resorts
                             </h2>
                             <div class="home-services__text">
-                                Curated stays, exceptional offers
+                                Curated stays
                             </div>
                         </article>
                         <article class="home-services__item">
@@ -254,9 +257,6 @@
                             <h2 class="home-services__title">
                                 Air
                             </h2>
-                            <div class="home-services__text">
-                                Flights to take you there
-                            </div>
                         </article>
                     </div>
                 </div>
@@ -269,13 +269,11 @@
                                 Send Us a Message
                             </h2>
                             <div class="contact__subtitle">
-                                Fill out the form below and a travel advisor will be in touch to help you plan the
-                                perfect trip.
+                                Fill out the form below to start planning.
                             </div>
                         </header>
-
                         <div class="form-contact">
-                            <form action="#" class="form-contact__form" novalidate>
+                            <form action="#" onsubmit="event.preventDefault();" class="form-contact__form" novalidate>
                                 <div class="form-contact__items">
                                     <div class="form-contact__item form-contact__item-half">
                                         <input type="text" name="First name" id="first_name" placeholder="First Name"
@@ -393,9 +391,9 @@
                                     <div class="form-contact__item">
                                         <textarea name="message" id="message" placeholder="Any special requests?"
                                             class="form-contact__input form-contact__input-textarea"
-                                            maxlength="150"></textarea>
+                                            maxlength="1500"></textarea>
                                         <div class="form-contact__disclaimer">
-                                            *max 150 characters
+                                            *max 1500 characters
                                         </div>
                                     </div>
                                 </div>
@@ -404,10 +402,36 @@
                                         Submit Request
                                     </button>
                                     <div class="form-contact__message">
-                                        We’ll be in touch within one business day
+                                        We typically reply within one business day
                                     </div>
                                 </footer>
                             </form>
+                            <div class="form-contact-success" data-popup="success">
+                                <div class="form-contact-success__wrapper" data-popup-wrapper>
+                                    <button type="button" class="form-contact-success__close-button" aria-label="close popup" data-popup-close>
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#close-icon'></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="form-contact-success__title title">
+                                        Thank you
+                                    </h3>
+                                    <div class="form-contact-success__icon">
+                                        <svg>
+                                            <use xlink:href='img/icons/icons-sprite.svg#circle-checkmark'></use>
+                                        </svg>
+                                    </div>
+                                   
+                                    <div class="form-contact-success__text">
+                                        <p>
+                                            Your request has been submitted.
+                                        </p>
+                                        <p>
+                                            Please allow one to two business days and an advisor will be in touch.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="content-contact">
@@ -416,9 +440,7 @@
                                 Why Use a Travel Advisor
                             </h3>
                             <div class="content-contact__subtitle">
-                                Our experienced travel advisors are passionate about creating unforgettable journeys and
-                                delivering exceptional
-                                service.
+                                We are knowledgeable in creating unforgettable journeys and delivering exceptional value.
                             </div>
                         </header>
                         <ul class="content-contact__list">
@@ -429,7 +451,7 @@
                                     </svg>
                                 </div>
                                 <div class="content-contact__text">
-                                    Direct Operator Pricing
+                                    No markups
                                 </div>
                             </li>
                             <li class="content-contact__item">
@@ -439,7 +461,7 @@
                                     </svg>
                                 </div>
                                 <div class="content-contact__text">
-                                    Exclusive perks with your itinerary
+                                    Added amenities
                                 </div>
                             </li>
                             <li class="content-contact__item">
@@ -449,7 +471,7 @@
                                     </svg>
                                 </div>
                                 <div class="content-contact__text">
-                                    Personalized recommendations
+                                    Bespoke Itineraries
                                 </div>
                             </li>
                             <li class="content-contact__item">
@@ -459,7 +481,7 @@
                                     </svg>
                                 </div>
                                 <div class="content-contact__text">
-                                    Expert knowledge & insider access
+                                    Concierge support
                                 </div>
                             </li>
                             <li class="content-contact__item">
@@ -469,7 +491,7 @@
                                     </svg>
                                 </div>
                                 <div class="content-contact__text">
-                                    Support Before & During Your Trip
+                                    Seamless travel
                                 </div>
                             </li>
                         </ul>
@@ -485,8 +507,8 @@
                                 </h4>
                             </div>
                             <div class="content-contact__description">
-                                Proudly serving Carefree, Cave Creek and upper Scottsdale with white-glove travel
-                                service since day one.
+                                Serving Carefree, Cave Creek and North Scottsdale with white-glove travel services since
+                                the 1980s.
                             </div>
                         </footer>
                     </div>
@@ -499,9 +521,8 @@
                             Meet Your Carefree Traveler Team
                         </h2>
                         <div class="team__subtitle">
-                            We are based in Carefree, Arizona, and are proud to be serving Carefree, Cave Creek and
-                            North Scottsdale community. Come
-                            meet us in person!
+                            We are based in Carefree, Arizona, and are proud to be serving the Carefree, Cave Creek and North Scottsdale community
+                            for over 40 years.
                         </div>
                     </header>
                     <div class="team__body">
@@ -517,9 +538,6 @@
                             <h3 class="team__name">
                                 Gregory Newman
                             </h3>
-                            <div class="team__position">
-                                Owner & Travel Adviser
-                            </div>
                         </article>
                         <article class="team__item">
                             <div class="team__photo">
@@ -533,9 +551,6 @@
                             <h3 class="team__name">
                                 Kathy Mulder
                             </h3>
-                            <div class="team__position">
-                                Manager & Senior Travel Advisor
-                            </div>
                         </article>
                     </div>
                 </div>
@@ -794,7 +809,7 @@
                                     </svg>
                                 </div>
                                 <div class="home-benefits__description">
-                                    White-glove service with peace of mind travel
+                                    White glove service and peace of mind travel
                                 </div>
                             </div>
                             <div class="home-benefits__item">
@@ -804,27 +819,27 @@
                                     </svg>
                                 </div>
                                 <div class="home-benefits__description">
-                                    Exclusive offers and member perks
+                                    Exclusive offers and added amenities
                                 </div>
                             </div>
                             <div class="home-benefits__item">
                                 <div class="home-benefits__icon">
                                     <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_03'></use>
+                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_05'></use>
                                     </svg>
                                 </div>
                                 <div class="home-benefits__description">
-                                    Member of leading travel organizations
+                                    Backing of industry leading consortia partners
                                 </div>
                             </div>
                             <div class="home-benefits__item">
                                 <div class="home-benefits__icon">
                                     <svg>
-                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_04'></use>
+                                        <use xlink:href='img/icons/icons-sprite.svg#home-benefits-icon_06'></use>
                                     </svg>
                                 </div>
                                 <div class="home-benefits__description">
-                                    Personalised support every step of the way
+                                    No markups - same price as advertised
                                 </div>
                             </div>
                         </div>
@@ -861,13 +876,18 @@
                                     <div class="content-home-reviews__body">
                                         <div class="content-home-reviews__text">
                                             <p>
-                                                “Carefree Traveler planned the perfect cruise for us. Every detail was
-                                                handled with care and professionalism. We can’t
-                                                wait to book again!”
+                                                My husband and I travel extensively throughout the world and we have
+                                                been using Kathy at the Carefree Traveler for
+                                                almost 20 years now. They always amaze us in the most positive way. The
+                                                Carefree Traveler has booked us on many
+                                                Seabourn, Silverseas, Regent Seven Seas cruises and European river
+                                                cruises. The team shows the true value by shopping
+                                                around for the best prices, the best rooms, complimentary upgrades and
+                                                do all of it in a timely fashion.
                                             </p>
                                         </div>
                                         <div class="content-home-reviews__name">
-                                            — Susan R., Carefree AZ
+                                            — Patty M, Carefree AZ
                                         </div>
                                     </div>
                                 </div>
@@ -875,13 +895,14 @@
                                     <div class="content-home-reviews__body">
                                         <div class="content-home-reviews__text">
                                             <p>
-                                                “Our cruise experience with Carefree Traveler was unforgettable! Every
-                                                aspect was meticulously organized, making our
-                                                journey seamless and enjoyable. We’re eager to plan our next adventure!”
+                                                I have worked with Gregory to plan over five cruises, all wonderful
+                                                experiences! He is knowledgeable, attentive, and
+                                                always makes the entire process feel effortless.I wouldn’t hesitate to
+                                                recommend Gregory and The Carefree Traveler.
                                             </p>
                                         </div>
                                         <div class="content-home-reviews__name">
-                                            — Leslie Alexander
+                                            — Marge P, Phoenix AZ
                                         </div>
                                     </div>
                                 </div>
@@ -889,13 +910,16 @@
                                     <div class="content-home-reviews__body">
                                         <div class="content-home-reviews__text">
                                             <p>
-                                                “Thanks to Carefree Traveler, our cruise was a dream come true! Their
-                                                attention to detail and expert planning made
-                                                everything perfect. We can’t wait to sail again!
+                                                Gregory has helped us plan several land and river cruises, and every one
+                                                has been an unforgettable experience! He is
+                                                knowledgeable, attentive, and always makes the planning process feel
+                                                effortless, and knows exactly what is our style in
+                                                terms of desitnations and suppliers. I wouldn’t hesitate to recommend
+                                                Gregory and The Carefree Traveler.
                                             </p>
                                         </div>
                                         <div class="content-home-reviews__name">
-                                            — Esther Howard
+                                            — Mark R, Scottsdale, AZ
                                         </div>
                                     </div>
                                 </div>
@@ -903,30 +927,24 @@
                                     <div class="content-home-reviews__body">
                                         <div class="content-home-reviews__text">
                                             <p>
-                                                “Carefree Traveler planned the perfect cruise for us. Every detail was
-                                                handled with care and professionalism. We can’t
-                                                wait to book again!”
+                                                Kathy and Gregory made the entire planning process easy and genuinely
+                                                enjoyable for us. They listen to what we want,
+                                                handle every detail, and offered brilliant recommendations. We
+                                                absolutely love knowing that our travel agents are right
+                                                here in town, and being able to meet with them on short notice whenever
+                                                needed is such a relief. The Carefree Traveler
+                                                consistently goes above and beyond anything. We travel for extensive
+                                                periods at a time and knowing that these
+                                                professionals are watching over us every step of thet way helps us
+                                                travel confidently.
                                             </p>
                                         </div>
                                         <div class="content-home-reviews__name">
-                                            — Susan R., Carefree AZ
+                                            — James W, Cave Creek, AZ
                                         </div>
                                     </div>
                                 </div>
-                                <div class='content-home-reviews__slide swiper-slide'>
-                                    <div class="content-home-reviews__body">
-                                        <div class="content-home-reviews__text">
-                                            <p>
-                                                “Our cruise experience with Carefree Traveler was unforgettable! Every
-                                                aspect was meticulously organized, making our
-                                                journey seamless and enjoyable. We’re eager to plan our next adventure!”
-                                            </p>
-                                        </div>
-                                        <div class="content-home-reviews__name">
-                                            — Leslie Alexander
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="content-home-reviews__pagination pagination"></div>
                         </div>
@@ -952,7 +970,10 @@
                                         </svg>
                                     </div>
                                     <address class="home-contacts__text">
-                                        7171 East Cave Creek Road Suite APO Box 1419Carefree, AZ 85377 USA
+                                        7171 East Cave Creek Road <br>
+                                        Suite A <br>
+                                        PO Box 1419 <br>
+                                        Carefree, AZ 85377 USA
                                     </address>
                                 </a>
                             </li>
@@ -996,7 +1017,10 @@
                             Location
                         </h2>
                         <address class="items-footer__address">
-                            7171 East Cave Creek Road Suite APO Box 1419 Carefree, AZ 85377 USA
+                            7171 East Cave Creek Road <br>
+                            Suite A <br>
+                            PO Box 1419 <br>
+                            Carefree, AZ 85377 USA
                         </address>
                     </div>
                     <div class="items-footer__item">
@@ -1021,14 +1045,16 @@
                         <nav class="items-footer__nav">
                             <ul class="items-footer__list">
                                 <li class="items-footer__social">
-                                    <a href="" class="items-footer__link" aria-label="facebook">
+                                    <a href="https://www.facebook.com/TheCarefreeTravelerAZ/" class="items-footer__link"
+                                        aria-label="facebook">
                                         <svg>
                                             <use xlink:href='img/icons/icons-sprite.svg#social-icon_01'></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="items-footer__social">
-                                    <a href="mailto:" class="items-footer__link" aria-label="email">
+                                    <a href="mailto:gregory@carefreetraveler.com" class="items-footer__link"
+                                        aria-label="email">
                                         <svg>
                                             <use xlink:href='img/icons/icons-sprite.svg#social-icon_02'></use>
                                         </svg>
@@ -1044,7 +1070,7 @@
             </div>
         </footer>
     </div>
-    <div class="contact-us-popup" data-popup data-clear-transition>
+    <div class="contact-us-popup" data-popup="timeout" data-clear-transition>
         <div class="contact-us-popup__body" data-popup-wrapper>
             <div class="contact-us-popup__info">
                 <div class='team team-alt'>
@@ -1166,7 +1192,7 @@
                 <img src="img/main/logo.png" width="98" height="51" loading="lazy" alt="logo">
             </div>
             <div class="proposal-popup__text">
-                Real People. Local Service. Visit our Carefree office or give us a call.
+                Real People. Bespoke Service.
             </div>
         </div>
         <a href="contact.html" class="proposal-popup__button button">

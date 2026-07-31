@@ -784,6 +784,9 @@ img {
     gap: 1.25rem;
   }
 }
+.header-menu__item-hide {
+  display: none;
+}
 .header-menu__link {
   color: var(--content-text-dark);
   -webkit-transition: all 0.3s ease 0s;
@@ -1527,6 +1530,9 @@ img {
   .category__button {
     display: none;
   }
+}
+.category__button-hide {
+  display: none;
 }
 @media (min-width: 38.75rem) {
   .category__footer {
@@ -2745,49 +2751,43 @@ img {
     padding-block: 2.75rem;
   }
 }
-.single-product-hero__container {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 20rem;
-  color: var(--primary-white);
-  gap: 3.75rem;
+.single-product-hero {
+  min-height: 466px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.single-product-hero__container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--primary-white);
   max-width: 75.25rem;
-}
-@media (max-width: 61.9988rem) {
-  .single-product-hero__container {
-    gap: 2.5rem;
-  }
-}
-@media (max-width: 47.9988rem) {
-  .single-product-hero__container {
-    grid-template-columns: 1fr 18.5rem;
-  }
-}
-@media (max-width: 43.75rem) {
-  .single-product-hero__container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-@media (min-width: 43.75rem) {
-  .single-product-hero__info {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
 }
 .single-product-hero__title {
   font-size: 2.25rem;
   line-height: 111%;
   font-family: var(--second-family);
+  margin-bottom: 1.25rem;
 }
 @media (min-width: 61.9988rem) {
   .single-product-hero__title {
     font-size: 3.875rem;
     line-height: 120%;
+  }
+}
+.single-product-hero__subtitle {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 61.9988rem) {
+  .single-product-hero__subtitle {
+    margin-bottom: 3.75rem;
   }
 }
 .single-product-hero__details {
@@ -2802,11 +2802,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 43.75rem) {
   .single-product-hero__details {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2840,14 +2841,6 @@ img {
   .single-product-hero__text {
     font-size: 1.5rem;
     line-height: 120%;
-  }
-}
-@media (min-width: 43.75rem) {
-  .single-product-hero__body {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
   }
 }
 @media (max-width: 47.9988rem) {
@@ -3107,7 +3100,7 @@ img {
     line-height: 144%;
   }
 }
-.single-product-exp__label {
+.single-product-exp__label:not(:last-child) {
   margin-bottom: 0.75rem;
 }
 .single-product-exp__description {
@@ -3128,6 +3121,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 .single-product-enabling {
@@ -3144,6 +3139,9 @@ img {
     padding-top: 3.75rem;
     padding-bottom: 5rem;
   }
+}
+.single-product-enabling-hide {
+  display: none;
 }
 .single-product-enabling__container {
   position: relative;
@@ -5006,6 +5004,119 @@ img {
 }
 .contact-us-popup__button {
   display: block;
+}
+
+.form-contact-success {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background: rgba(23, 36, 58, 0.6);
+  padding: 2.5rem 0rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.form-contact-success._active {
+  opacity: 1;
+  visibility: visible;
+}
+.form-contact-success__wrapper {
+  position: relative;
+  margin: auto;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background: var(--bg-light);
+}
+@media (min-width: 53.125rem) {
+  .form-contact-success__wrapper {
+    max-width: 31.25rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.form-contact-success__wrapper {
+  padding: 2.5rem;
+}
+@media (min-width: 30rem) {
+  .form-contact-success__wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 61.9988rem) {
+  .form-contact-success__wrapper {
+    padding: 2.5rem;
+  }
+}
+.form-contact-success__close-button {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.625rem;
+  z-index: 10;
+}
+.form-contact-success__close-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.form-contact-success__close-button {
+  color: var(--primary-black);
+}
+.form-contact-success__title {
+  font-family: var(--second-family);
+  margin-bottom: 0.625rem;
+}
+.form-contact-success__icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.form-contact-success__icon svg {
+  width: 50px;
+  height: 50px;
+}
+.form-contact-success__icon {
+  margin: 0 auto;
+  margin-bottom: 1.5625rem;
+  color: var(--content-secondary);
+}
+.form-contact-success__text p:not(:last-child) {
+  margin-bottom: 0.625rem;
 }
 
 .proposal-popup {
