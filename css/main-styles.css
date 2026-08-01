@@ -987,7 +987,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 0rem;
+    padding-bottom: 0.25rem;
   }
 }
 .home-hero__info {
@@ -1342,6 +1342,11 @@ img {
   font-size: 1rem;
   line-height: 143%;
   display: block;
+}
+.home-services-overflow {
+  position: relative;
+  z-index: 2;
+  margin-top: -0.25rem;
 }
 .home-services__container {
   max-width: 75.25rem;

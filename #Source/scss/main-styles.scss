@@ -726,7 +726,7 @@ img {
 		}
 		@media (max-width: 42.5rem) {
 			flex-direction: column;
-			padding-bottom: 0rem;
+			padding-bottom: 0.25rem;
 		}
 	}
 	&__back {
@@ -966,6 +966,11 @@ img {
 			line-height: 143%;
 			display: block;
 		}
+	}
+	&-overflow{
+		position: relative;
+		z-index: 2;
+		margin-top: -0.25rem;
 	}
 	&__container {
 		max-width: 75.25rem;
