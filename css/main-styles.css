@@ -453,7 +453,7 @@ img {
   transition: all 0.3s ease 0s;
 }
 @media (any-hover: hover) {
-  .partner:hover {
+  .partner[href]:hover {
     -webkit-filter: grayscale(0%) opacity(1);
             filter: grayscale(0%) opacity(1);
   }

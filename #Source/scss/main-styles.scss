@@ -326,7 +326,7 @@ img {
 	filter: grayscale(100%) opacity(0.3);
 	transition: all 0.3s ease 0s;
 	@media (any-hover: hover) {
-		&:hover {
+		&[href]:hover {
 			filter: grayscale(0%) opacity(1);
 		}
 	}
