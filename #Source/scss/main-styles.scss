@@ -1360,6 +1360,16 @@ img {
 	@media (max-width: 28.125rem) {
 		padding-block: 2.75rem;
 	}
+	&-alt {
+		padding-block: 1.25rem;
+		background: var(--bg-light);
+		.content-home-partners__pagination{
+			margin-top: 0.9375rem;
+			@media (min-width:61.9988rem) {
+				display: none;
+			}
+		}
+	}
 	&__container {
 	}
 

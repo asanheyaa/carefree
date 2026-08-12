@@ -256,7 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (!form) return;
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	// const phoneRegex = /^\+?\d{1,4}?[\s.-]?\(?\d{1,3}?\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}$/
 	function isValidGlobalPhone(phone) {
 		const cleaned = phone.replace(/[^\d]/g, '');
 

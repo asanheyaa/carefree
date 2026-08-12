@@ -1866,6 +1866,18 @@ img {
     padding-block: 2.75rem;
   }
 }
+.home-partners-alt {
+  padding-block: 1.25rem;
+  background: var(--bg-light);
+}
+.home-partners-alt .content-home-partners__pagination {
+  margin-top: 0.9375rem;
+}
+@media (min-width: 61.9988rem) {
+  .home-partners-alt .content-home-partners__pagination {
+    display: none;
+  }
+}
 .home-partners__header {
   text-align: center;
   margin-bottom: 2rem;

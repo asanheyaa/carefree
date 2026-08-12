@@ -26,128 +26,73 @@ if (categorySwipers) {
 
 }
 
-// const homePartnersSwiper = document.querySelector('.content-home-partners__swiper');
 
-// if (homePartnersSwiper) {
-// 	let swiperInstance = null;
+const homePartnersSwipersWrappers = document.querySelectorAll('.content-home-partners__items');
 
-// 	function initPartnersSwiper() {
-// 		const width = window.innerWidth;
-// 		let slides = 2;
-// 		let gap = 4;
+if (homePartnersSwipersWrappers) {
+	homePartnersSwipersWrappers.forEach(homePartnersSwipersWrapper => {
+		const homePartnersSwipers = homePartnersSwipersWrapper.querySelectorAll('.content-home-partners__swiper');
+		let firstSwiper = null;
+		let secondSwiper = null;
 
-// 		if (width >= 768) {
-// 			slides = 5;
-// 			gap = 20;
-// 		} else if (width >= 600) {
-// 			slides = 4;
-// 			gap = 12;
-// 		} else if (width >= 450) {
-// 			slides = 3;
-// 			gap = 12;
-// 		}
+		homePartnersSwipers.forEach(function (homePartnersSwiper, i) {
+			const isFirst = i === 0;
 
-// 		const config = {
-// 			slidesPerView: slides,
-// 			spaceBetween: gap,
-// 			grid: {
-// 				rows: 2,
-// 				fill: "row"
-// 			},
-// 			observer: true,
-// 			observeParents: true,
-// 			resizeObserver: true,
-// 			navigation: {
-// 				nextEl: '.content-home-partners__button-next',
-// 				prevEl: '.content-home-partners__button-prev',
-// 			},
-// 			speed: 500,
-// 			pagination: {
-// 				el: '.content-home-partners__pagination',
-// 				type: 'bullets',
-// 				clickable: true,
-// 			}
-// 		};
+			const swiperConfig = {
+				slidesPerView: 2,
+				spaceBetween: 12,
 
-// 		if (swiperInstance) {
-// 			swiperInstance.destroy(true, true);
-// 		}
+				loop: true,
+				speed: 500,
+				breakpoints: {
+					768: { slidesPerView: 5, spaceBetween: 20 },
+					600: { slidesPerView: 4, spaceBetween: 12 },
+					450: { slidesPerView: 3, spaceBetween: 12 },
+				}
+			};
 
-// 		swiperInstance = new Swiper(homePartnersSwiper, config);
-// 	}
-
-// 	initPartnersSwiper();
-
-// 	let currentSlidesCount = swiperInstance ? swiperInstance.params.slidesPerView : 2;
-// 	let resizeTimeout;
-
-// 	window.addEventListener('resize', () => {
-// 		clearTimeout(resizeTimeout);
-// 		resizeTimeout = setTimeout(() => {
-// 			const width = window.innerWidth;
-// 			let targetSlides = 2;
-
-// 			if (width >= 768) targetSlides = 5;
-// 			else if (width >= 600) targetSlides = 4;
-// 			else if (width >= 450) targetSlides = 3;
-
-// 			if (targetSlides !== currentSlidesCount) {
-// 				currentSlidesCount = targetSlides;
-// 				initPartnersSwiper();
-// 			}
-// 		}, 100);
-// 	});
-
-// }
-
-const homePartnersSwipers = document.querySelectorAll('.content-home-partners__swiper');
-
-if (homePartnersSwipers.length > 0) {
-	let firstSwiper = null;
-	let secondSwiper = null;
-
-	homePartnersSwipers.forEach(function (homePartnersSwiper, i) {
-		const isFirst = i === 0;
-
-		const swiperConfig = {
-			slidesPerView: 2,
-			spaceBetween: 12,
-		
-			loop: true,
-			speed: 500,
-			breakpoints: {
-				768: { slidesPerView: 5, spaceBetween: 20 },
-				600: { slidesPerView: 4, spaceBetween: 12 },
-				450: { slidesPerView: 3, spaceBetween: 12 },
+			if (homePartnersSwipers.length === 2) {
+				if (isFirst) {
+					swiperConfig.navigation = {
+						nextEl: '.content-home-partners__button-next',
+						prevEl: '.content-home-partners__button-prev',
+					};
+				} else {
+					swiperConfig.pagination = {
+						el: '.content-home-partners__pagination',
+						type: 'bullets',
+						clickable: true,
+					};
+				}
+			} else {
+				swiperConfig.navigation = {
+					nextEl: '.content-home-partners__button-next',
+					prevEl: '.content-home-partners__button-prev',
+				};
+				swiperConfig.pagination = {
+					el: '.content-home-partners__pagination',
+					type: 'bullets',
+					clickable: true,
+				};
 			}
-		};
 
-		if (isFirst) {
-			swiperConfig.navigation = {
-				nextEl: '.content-home-partners__button-next',
-				prevEl: '.content-home-partners__button-prev',
-			};
-		} else {
-			swiperConfig.pagination = {
-				el: '.content-home-partners__pagination',
-				type: 'bullets',
-				clickable: true,
-			};
-		}
 
-		const partnersSwiper = new Swiper(homePartnersSwiper, swiperConfig);
 
-		if (isFirst) {
-			firstSwiper = partnersSwiper;
-		} else {
-			secondSwiper = partnersSwiper;
+			const partnersSwiper = new Swiper(homePartnersSwiper, swiperConfig);
+
+			if (isFirst) {
+				firstSwiper = partnersSwiper;
+			} else {
+				secondSwiper = partnersSwiper;
+			}
+		});
+
+		if (firstSwiper && secondSwiper) {
+			firstSwiper.controller.control = secondSwiper;
+			secondSwiper.controller.control = firstSwiper;
 		}
 	});
-
-	if (firstSwiper && secondSwiper) {
-		firstSwiper.controller.control = secondSwiper;
-		secondSwiper.controller.control = firstSwiper;
-	}
+	
 }
 const homeReviewsSwiper = document.querySelector('.content-home-reviews__swiper');
 if (homeReviewsSwiper) {
@@ -229,7 +174,7 @@ if (mobileSwiperContainers) {
 						el: `.${container.classList[0]} .pagination`,
 						clickable: true,
 					},
-					
+
 				});
 
 				mobileSwipers[index] = swiper;
