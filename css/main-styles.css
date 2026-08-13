@@ -1898,6 +1898,7 @@ img {
   .home-partners-alt .swiper-nav__button:hover {
     color: var(--bg-dark);
     opacity: 1;
+    background: none;
   }
 }
 .home-partners__header {
