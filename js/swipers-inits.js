@@ -74,6 +74,10 @@ if (homePartnersSwipersWrappers) {
 					type: 'bullets',
 					clickable: true,
 				};
+				swiperConfig.breakpoints['992'] = {
+					slidesPerView: 6,
+					spaceBetween: 20,
+				}
 			}
 
 
@@ -92,7 +96,7 @@ if (homePartnersSwipersWrappers) {
 			secondSwiper.controller.control = firstSwiper;
 		}
 	});
-	
+
 }
 const homeReviewsSwiper = document.querySelector('.content-home-reviews__swiper');
 if (homeReviewsSwiper) {
