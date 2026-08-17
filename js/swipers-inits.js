@@ -34,6 +34,7 @@ if (homePartnersSwipersWrappers) {
 		const homePartnersSwipers = homePartnersSwipersWrapper.querySelectorAll('.content-home-partners__swiper');
 		let firstSwiper = null;
 		let secondSwiper = null;
+		let isAlt = homePartnersSwipersWrapper.classList.contains('content-home-partners__items-alt')
 
 		homePartnersSwipers.forEach(function (homePartnersSwiper, i) {
 			const isFirst = i === 0;
@@ -41,7 +42,9 @@ if (homePartnersSwipersWrappers) {
 			const swiperConfig = {
 				slidesPerView: 2,
 				spaceBetween: 12,
-
+				observer: true,
+				observeParents: true,
+				updateOnWindowResize: true,
 				loop: true,
 				speed: 500,
 				breakpoints: {
@@ -51,34 +54,42 @@ if (homePartnersSwipersWrappers) {
 				}
 			};
 
+			const prevButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-prev'),
+				nextButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-next'),
+				pagination = homePartnersSwipersWrapper.querySelector('.content-home-partners__pagination')
 			if (homePartnersSwipers.length === 2) {
 				if (isFirst) {
+
+
 					swiperConfig.navigation = {
-						nextEl: '.content-home-partners__button-next',
-						prevEl: '.content-home-partners__button-prev',
+						nextEl: nextButton,
+						prevEl: prevButton,
 					};
 				} else {
 					swiperConfig.pagination = {
-						el: '.content-home-partners__pagination',
+						el: pagination,
 						type: 'bullets',
 						clickable: true,
 					};
 				}
+
 			} else {
+				const prevButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-prev'),
+					nextButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-next'),
+					pagination = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__pagination')
 				swiperConfig.navigation = {
-					nextEl: '.content-home-partners__button-next',
-					prevEl: '.content-home-partners__button-prev',
+					nextEl: nextButton,
+					prevEl: prevButton,
 				};
 				swiperConfig.pagination = {
-					el: '.content-home-partners__pagination',
+					el: pagination,
 					type: 'bullets',
 					clickable: true,
 				};
-				swiperConfig.breakpoints['992'] = {
-					slidesPerView: 6,
-					spaceBetween: 20,
-				}
 			}
+
+
+
 
 
 
