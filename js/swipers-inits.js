@@ -34,7 +34,7 @@ if (homePartnersSwipersWrappers) {
 		const homePartnersSwipers = homePartnersSwipersWrapper.querySelectorAll('.content-home-partners__swiper');
 		let firstSwiper = null;
 		let secondSwiper = null;
-		let isAlt = homePartnersSwipersWrapper.classList.contains('content-home-partners__items-alt')
+		let isAltMobile = homePartnersSwipersWrapper.classList.contains('content-home-partners__items-alt-mobile')
 
 		homePartnersSwipers.forEach(function (homePartnersSwiper, i) {
 			const isFirst = i === 0;
@@ -58,6 +58,23 @@ if (homePartnersSwipersWrappers) {
 				nextButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-next'),
 				pagination = homePartnersSwipersWrapper.querySelector('.content-home-partners__pagination')
 			if (homePartnersSwipers.length === 2) {
+				if (isAltMobile){
+					swiperConfig.spaceBetween = 8
+					swiperConfig.slidesPerView = 2
+					
+					swiperConfig.breakpoints['480'] = {
+						spaceBetween : 28,
+						slidesPerView: 3
+					}
+					swiperConfig.breakpoints['450'] = {
+						slidesPerView: 3,
+						spaceBetween: 8
+					}
+					swiperConfig.breakpoints['340'] = {
+						slidesPerView: 3,
+						spaceBetween: 8
+					}
+				}
 				if (isFirst) {
 
 
