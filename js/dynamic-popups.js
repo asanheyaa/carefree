@@ -5,40 +5,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const popupCache = new Map();
   const popupElementsCache = new Map();
   let popupsData = null;
-  let isLoading = false;
+let loadingPromise = null; 
 
-  async function loadPopupsData() {
-    if (popupsData) return popupsData;
-    if (isLoading) {
-      return new Promise((resolve) => {
-        const checkInterval = setInterval(() => {
-          if (popupsData) {
-            clearInterval(checkInterval);
-            resolve(popupsData);
-          }
-        }, 100);
-      });
-    }
+async function loadPopupsData() {
+  if (popupsData) return popupsData;
+  
+  if (loadingPromise) return loadingPromise;
 
-    isLoading = true;
+  loadingPromise = (async () => {
     try {
       const response = await fetch('api/destinations.json');
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
       const data = await response.json();
       popupsData = data.destinations || data;
-      
+
       popupsData.forEach(item => {
         popupCache.set(item.id, item);
       });
-      
+
       return popupsData;
     } catch (error) {
       console.error('Failed to load popups data:', error);
       return null;
     } finally {
-      isLoading = false;
+      loadingPromise = null;
     }
-  }
+  })();
+
+  return loadingPromise;
+}
 
   async function getPopupData(id) {
     if (popupCache.has(id)) {
@@ -120,6 +115,16 @@ function createPopupHTML(popupData) {
     </div>
   `;
 }
+
+   const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+		const activePopup = document.querySelector('[data-popup]._active')
+		if (activePopup){
+			
+        closePopup(activePopup);
+		}
+      }
+    };
   function closePopup(popup) {
     if (!popup) return;
     popup.classList.remove('_active');
@@ -138,31 +143,11 @@ function createPopupHTML(popupData) {
       }
     });
 
-    const handleEscape = (e) => {
-      if (e.key === 'Escape' && popup.classList.contains('_active')) {
-        closePopup(popup);
-        document.removeEventListener('keydown', handleEscape);
-      }
-    };
-    
-    const observer = new MutationObserver(() => {
-      if (popup.classList.contains('_active')) {
-        document.addEventListener('keydown', handleEscape);
-      } else {
-        document.removeEventListener('keydown', handleEscape);
-      }
-    });
-    
-    observer.observe(popup, { attributes: true, attributeFilter: ['class'] });
-    
-    popup._cleanup = () => {
-      observer.disconnect();
-      document.removeEventListener('keydown', handleEscape);
-    };
   }
 
+    
+
   function openPopupWithAnimation(popup) {
-    popup.classList.remove('_preparing');
     
     popup.classList.add('_preparing');
     
@@ -223,16 +208,8 @@ function createPopupHTML(popupData) {
     trigger.addEventListener('click', (e) => handleTriggerClick(e, trigger));
   });
 
-  document.addEventListener('click', (e) => {
-    if (e.target.closest('.content-category-popup') && 
-        !e.target.closest('[data-popup-wrapper]') && 
-        !e.target.closest('[data-popup-close]')) {
-      const popup = e.target.closest('.content-category-popup');
-      if (popup) {
-        closePopup(popup);
-      }
-    }
-  });
+   document.addEventListener('keydown', handleEscape);
+
 
   if ('requestIdleCallback' in window) {
     requestIdleCallback(() => loadPopupsData());

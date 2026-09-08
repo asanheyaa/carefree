@@ -1241,18 +1241,16 @@ img {
 	z-index: 200;
 	background: rgba(23, 36, 58, 0.6);
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	opacity: 0;
 	visibility: hidden;
 	transition:
 		opacity 0.4s ease,
 		visibility 0.4s ease;
-	padding: 1.25rem;
-
-	@media (max-width: 30rem) {
-		padding-inline: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 2.5rem 0;
+	@media (min-width: 700px) {
+		padding: 2.5rem 1.25rem;
 	}
 	&._preparing {
 		opacity: 0;
@@ -1275,16 +1273,14 @@ img {
 	}
 
 	&__wrapper {
+		margin: auto;
+		display: flex;
 		max-width: 78.625rem;
 		width: 100%;
-		max-height: calc(100vh - 2.5rem);
-		background: var(--content-text-light);
 		position: relative;
 		z-index: 2;
 		padding: 3rem 1rem;
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
-
+		background: var(--content-text-light);
 		transform: scale(0.9) translateY(1.875rem);
 		opacity: 0;
 		transition:
@@ -1326,6 +1322,7 @@ img {
 		gap: 1.25rem;
 		height: 100%;
 		align-items: center;
+		width: 100%;
 		@media (min-width: 30rem) {
 			gap: 1.5rem;
 		}
