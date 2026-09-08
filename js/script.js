@@ -343,7 +343,7 @@ if (popups) {
 				popup.classList.add('_active')
 				document.body.classList.add('_lock')
 			}, 5000);
-		}
+		} 
 
 		popup.addEventListener('click', (e) => {
 			const target = e.target

@@ -1,0 +1,314 @@
+{
+	"destinations": [
+		{
+			"id": "columbia-snake",
+			"mapSrc": "img/american-cruises/popups/maps/map_01.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_01.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_02.webp",
+			"title": "Columbia & Snake River Cruises",
+			"description": [
+				"Follow in the footsteps of the epic Lewis and Clark Expedition as you cruise the legendary Columbia and Snake Rivers. You will be amazed by the beautiful and ever-changing landscapes, including the Columbia River Gorge, Hells Canyon, Multnomah Falls, and Mount St. Helens."
+			]
+		},
+		{
+			"id": "mississippi-river",
+			"mapSrc": "img/american-cruises/popups/maps/map_02.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_03.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_04.webp",
+			"title": "Mississippi River Cruises",
+			"description": [
+				"Embark on an unforgettable journey along the iconic Mississippi, stretching from the serene landscapes of northern Minnesota to the vibrant Gulf. Experience one of the best Mississippi River cruises available, where classic and modern small ship experiences come together to showcase the heart of America."
+			]
+		},
+		{
+			"id": "hudson-river",
+			"mapSrc": "img/american-cruises/popups/maps/map_03.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_05.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_06.webp",
+			"title": "Hudson River Cruises",
+			"description": [
+				"Enjoy the beauty and heritage of the Hudson River Valley on a cruise during summer's lush greenery or fall's vibrant colours. This journey blends relaxation with enriching adventure, with the Catskill Mountains provide a stunning natural backdrop along your travels in either direction."
+			]
+		},
+		{
+			"id": "tennessee-cumberland",
+			"mapSrc": "img/american-cruises/popups/maps/map_04.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_07.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_08.webp",
+			"title": "Tennessee & Cumberland River Cruises",
+			"description": [
+				"Follow America's musical and cultural heritage along the Tennessee and Cumberland Rivers. Enjoy unmatched comfort and privileged access to this celebrated yet lesser explored region. From the live music of Nashville to the cultural legacy of Chattanooga, each port offers a deep connection to Southern heritage."
+			]
+		},
+		{
+			"id": "ohio-river",
+			"mapSrc": "img/american-cruises/popups/maps/map_05.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_09.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_10.webp",
+			"title": "Ohio River Cruises",
+			"description": [
+				"Cruise between Louisville and Pittsburgh aboard a modern small ship to experience this historic waterway and the beauty unfolding along its forested shores and rolling riverbanks. Watch quiet towns and deep stretches of farmland drift by as the river steers your journey."
+			]
+		},
+		{
+			"id": "potomac-river",
+			"mapSrc": "img/american-cruises/popups/maps/map_06.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_11.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_12.webp",
+			"title": "Potomac River Cruises",
+			"description": [
+				"Experience a slice of American heritage on a cruise along the Potomac River. This scenic waterway connects Washington, D.C. to The Chesapeake Bay, offering access to iconic landmarks like the National Mall and George Washington's Mount Vernon."
+			]
+		},
+		{
+			"id": "arkansas-river",
+			"mapSrc": "img/american-cruises/popups/maps/map_07.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_13.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_14.webp",
+			"title": "Arkansas River Cruises",
+			"description": [
+				"This lesser-known route winds through lush farmland, the Ozark foothills, and picturesque small towns; offering intimate views of the nation's interior on an ideyllic gem."
+			]
+		},
+		{
+			"id": "new-england",
+			"mapSrc": "img/american-cruises/popups/maps/map_08.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_15.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_16.webp",
+			"title": "New England Cruises",
+			"description": [
+				"The islands and harbours of New England are among the most desired summer vacation retreats to escape the Arizona heat. From the quaint island villages to the untamed beauty of the Maine coasts, ACL has a number of captivating small ship New England cruise itineraries for seasoned travelers."
+			]
+		},
+		{
+			"id": "alaska",
+			"mapSrc": "img/american-cruises/popups/maps/map_09.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_17.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_18.webp",
+			"title": "Alaska Cruises",
+			"description": [
+				"Experience the breathtaking scenery and inspiring wildlife of Alaska on a small ship cruise. Enjoy one of the best Alaska cruises; designed to bring you closer to glaciers, wildlife, and ports. Get up close and personal to the natural beauty of Alaska with cruises calling on Endicott Arm, Glacier Bay National Park, and more."
+			]
+		},
+		{
+			"id": "great-lakes",
+			"mapSrc": "img/american-cruises/popups/maps/map_10.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_19.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_20.webp",
+			"title": "Great Lakes Cruises",
+			"description": [
+				"Travel to charming coastal towns found along the Great Lakes on an unforgettable journey. From castle-dotted archipelagos to engineering marvels, a thoughtfully crafted Great Lakes cruise delivers both an mentally stimulating yet physically relaxing experience aboard modern small vessels."
+			]
+		},
+		{
+			"id": "puget-sound",
+			"mapSrc": "img/american-cruises/popups/maps/map_11.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_21.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_22.webp",
+			"title": "Puget Sound Cruises",
+			"description": [
+				"Admire the stunning scenery of Puget Sound and the San Juan Islands as you sail through the scenic coastlines of the Pacific Northwest. Feast on regional cuisine crafted by master chefs as you journey through one of the most unique cruise regions near Seattle and Vancouver."
+			]
+		},
+		{
+			"id": "florida-southeast",
+			"mapSrc": "img/american-cruises/popups/maps/map_12.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_23.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_24.webp",
+			"title": "Florida & Southeast U.S. Cruises",
+			"description": [
+				"Discover the beauty of Florida on a cruise that seamlessly blends discovery and tranquility. Enjoy a journey around the Sunshine State, reaching enchanting ports such as Key West, St. Augustine, St. Petersburg, Marco Island, and Punta Gorda; places often inaccessible to larger ships."
+			]
+		},
+		{
+			"id": "chesapeake-bay",
+			"mapSrc": "img/american-cruises/popups/maps/map_13.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_25.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_26.webp",
+			"title": "Chesapeake Bay Cruises",
+			"description": [
+				"America's largest estuary is an ideal setting for small-ship cruising. Dive into the region's rich maritime heritage as you explore colonial towns such as Annapolis, St. Michaels, and Norfolk, each with their own distinct character."
+			]
+		},
+		{
+			"id": "denali",
+			"mapSrc": "img/american-cruises/popups/maps/map_14.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_27.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_28.webp",
+			"title": "Denali National Park",
+			"description": [
+				"This land and cruise itinerary highlights Alaska's great national parks and the terrain that defines them."
+			]
+		},
+		{
+			"id": "yellowstone",
+			"mapSrc": "img/american-cruises/popups/maps/map_15.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_29.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_30.webp",
+			"title": "Yellowstone National Park",
+			"description": [
+				"Discover the best of the American West on the National Parks & Legendary Rivers itinerary, combining a scenic cruise along the Columbia and Snake Rivers with a 7-day guided exploration of three iconic national parks."
+			]
+		},
+		{
+			"id": "mount-rainier",
+			"mapSrc": "img/american-cruises/popups/maps/map_16.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_31.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_32.webp",
+			"title": "Mount Rainier National Park",
+			"description": [
+				"Venture into Mount Rainier National Park, a landscape of towering forests, vibrant wildflower meadows, and the glacier-topped summit dominating the horizon."
+			]
+		},
+		{
+			"id": "glacier",
+			"mapSrc": "img/american-cruises/popups/maps/map_17.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_33.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_34.webp",
+			"title": "Glacier National Park",
+			"description": [
+				"Glacier National Park features the unspoiled beauty of alpine meadows, deep forests, waterfalls, glistening glaciers and sparkling lakes."
+			]
+		},
+		{
+			"id": "great-smoky",
+			"mapSrc": "img/american-cruises/popups/maps/map_18.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_35.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_36.webp",
+			"title": "Great Smoky National Park",
+			"description": [
+				"Admire sweeping vistas of the Smoky Mountains and surrounding Southern Appalachian Mountain area."
+			]
+		},
+		{
+			"id": "grand-teton",
+			"mapSrc": "img/american-cruises/popups/maps/map_19.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_37.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_38.webp",
+			"title": "Grand Teton National Park",
+			"description": [
+				"Get lost in over 300,000 acres of lush valley, mountain meadows, alpine lakes, majestic mountains and fields of lemon-yellow blooms."
+			]
+		},
+		{
+			"id": "patriot-class",
+			"mapSrc": "img/american-cruises/popups/maps/map_20.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_39.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_40.webp",
+			"title": "Patriot Class Coastal Ship Cruises",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Luxurious Grand Suites",
+						"Open Seating Dining",
+						"Multiple Guest Lounges",
+						"Bow Terrace for Observation",
+						"Elevator Access to All Decks"
+					]
+				},
+				"Available on the New England & East Coast Cruises, Potomac River & Chesapeake Bay Cruises, Hudson River, and Florida Coast Cruises"
+			]
+		},
+		{
+			"id": "coastal-cat",
+			"mapSrc": "img/american-cruises/popups/maps/map_21.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_41.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_42.webp",
+			"title": "Coastal Cat Cruises",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Modern Interior Design",
+						"Multiple Dining Venues",
+						"Bow Observation Area for Scenic Viewing",
+						"Spacious Sun Deck",
+						"Elevator Access to Each Deck"
+					]
+				},
+				"Available on New England, Florida, East Coast, and Southeast Coast cruises."
+			]
+		},
+		{
+			"id": "american-riverboat",
+			"mapSrc": "img/american-cruises/popups/maps/map_22.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_43.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_44.webp",
+			"title": "American Riverboat vessels",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Largest Stateroom on any Riverboat",
+						"Multiple Dining Venues",
+						"Sophisticated and Modern Décor",
+						"Multi-Story Glass Atrium",
+						"Elevator Access to All Passenger Decks"
+					]
+				},
+				"Available on the Columbia & Snake and Mississippi River Cruises."
+			]
+		},
+		{
+			"id": "constellation-class",
+			"mapSrc": "img/american-cruises/popups/maps/map_23.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_45.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_46.webp",
+			"title": "American Constellation and American Constitution Cruises",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Traditional Bow for Coastal Travel",
+						"Main Deck Restaurant with 270º Views",
+						"Sun Deck with Shaded Lounge Area",
+						"Entertainment & Reading Lounge",
+						"Elevator Access to All Passenger Decks"
+					]
+				},
+				"Available on the Alaska Cruises and Puget Sound & San Juan Islands Cruise"
+			]
+		},
+		{
+			"id": "independence-class",
+			"mapSrc": "img/american-cruises/popups/maps/map_24.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_47.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_48.webp",
+			"title": "American Independence, Spirit and Star Cruise Ships",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Traditional Bow for Coastal Travel",
+						"Main Deck Restaurant with 270º Views",
+						"Sun Deck with Shaded Lounge Area",
+						"Entertainment & Reading Lounges",
+						"Limited Elevator Access – Call for Details"
+					]
+				},
+				"Available on New England Islands, Chesapeake Bay and Puget Sound & San Juan Islands Cruises"
+			]
+		},
+		{
+			"id": "paddlewheeler",
+			"mapSrc": "img/american-cruises/popups/maps/map_25.webp",
+			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_49.webp",
+			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_50.webp",
+			"title": "Experience American Heritage",
+			"description": [
+				{
+					"type": "list",
+					"items": [
+						"Classic Paddlewheel Aesthetic",
+						"Open Seating Dining",
+						"Three Distinct Guest Lounges",
+						"Cozy Study Enclave",
+						"Elevator Access to All Passenger Decks"
+					]
+				},
+				"Available on the Columbia & Snake, Mississippi, Ohio and Tennessee River Cruises"
+			]
+		}
+	]
+}
