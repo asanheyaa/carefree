@@ -1074,10 +1074,13 @@ img {
 
 	&__header {
 		display: flex;
-		justify-content: space-between;
 		gap: 0.9375rem;
 		margin-bottom: 2rem;
 		align-items: center;
+		justify-content: center;
+		@media (min-width: 38.75rem) {
+			justify-content: space-between;
+		}
 	}
 
 	&__title {
@@ -1090,6 +1093,7 @@ img {
 	&__actions {
 		display: flex;
 		gap: 2rem;
+		display: none;
 	}
 	&__button {
 		padding: 1rem 4rem;
