@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     isLoading = true;
     try {
-      const response = await fetch('/api/destinations.json');
+      const response = await fetch('api/destinations.json');
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
       const data = await response.json();
       popupsData = data.destinations || data;
