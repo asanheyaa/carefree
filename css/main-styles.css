@@ -1534,7 +1534,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
-  display: none;
+}
+@media (max-width: 38.75rem) {
+  .category__actions {
+    display: none;
+  }
 }
 .category__button {
   padding: 1rem 4rem;

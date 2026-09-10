@@ -1093,7 +1093,9 @@ img {
 	&__actions {
 		display: flex;
 		gap: 2rem;
-		display: none;
+		@media (max-width: 38.75rem) {
+			display: none;
+		}
 	}
 	&__button {
 		padding: 1rem 4rem;
