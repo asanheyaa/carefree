@@ -14,16 +14,20 @@ async function loadPopupsData() {
 
   loadingPromise = (async () => {
     try {
-      const response = await fetch('api/destinations.json');
-      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-      const data = await response.json();
-      popupsData = data.destinations || data;
+      const popupCategory = document.querySelector('[data-popup-category]');
+      if (popupCategory) {
+        const response = await fetch(`api/${popupCategory.dataset.popupCategory}.json`);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const data = await response.json();
+        popupsData = data.destinations || data;
 
-      popupsData.forEach(item => {
-        popupCache.set(item.id, item);
-      });
+        popupsData.forEach(item => {
+          popupCache.set(item.id, item);
+        });
 
-      return popupsData;
+        return popupsData;
+      }
+    
     } catch (error) {
       console.error('Failed to load popups data:', error);
       return null;

@@ -1892,6 +1892,12 @@ img {
             transform: translateX(100%);
   }
 }
+@media (min-width: 61.9988rem) {
+  .content-category-popup__map {
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+}
 .content-category-popup__map img {
   -o-object-fit: contain;
      object-fit: contain;

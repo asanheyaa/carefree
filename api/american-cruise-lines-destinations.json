@@ -97,7 +97,7 @@
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_20.webp",
 			"title": "Great Lakes Cruises",
 			"description": [
-				"Travel to charming coastal towns found along the Great Lakes on an unforgettable journey. From castle-dotted archipelagos to engineering marvels, a thoughtfully crafted Great Lakes cruise delivers both an mentally stimulating yet physically relaxing experience aboard modern small vessels."
+				"Travel to charming coastal towns found along the Great Lakes on an unforgettable journey. From castle-dotted archipelagos to engineering marvels, a thoughtfully crafted Great Lakes cruise delivers both a mentally stimulating yet physically relaxing experience aboard modern small vessels."
 			]
 		},
 		{
@@ -127,7 +127,7 @@
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_26.webp",
 			"title": "Chesapeake Bay Cruises",
 			"description": [
-				"America's largest estuary is an ideal setting for small-ship cruising. Dive into the region's rich maritime heritage as you explore colonial towns such as Annapolis, St. Michaels, and Norfolk, each with their own distinct character."
+				"America's largest estuary is an ideal setting for small-ship cruising. Dive into the region's rich maritime heritage as you explore colonial towns such as Annapolis, St. Michaels, and Williamsburg, each with their own distinct character."
 			]
 		},
 		{
@@ -235,7 +235,7 @@
 			"mapSrc": "img/american-cruises/popups/maps/map_22.webp",
 			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_43.webp",
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_44.webp",
-			"title": "American Riverboat vessels",
+			"title": "American Riverboat Cruises",
 			"description": [
 				{
 					"type": "list",

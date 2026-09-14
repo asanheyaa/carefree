@@ -1395,6 +1395,10 @@ img {
 	}
 
 	&__map {
+		@media (min-width:61.9988rem) {
+			border-radius: 0.25rem;
+			overflow: hidden;
+		}
 		img {
 			object-fit: contain;
 			max-width: 100%;
