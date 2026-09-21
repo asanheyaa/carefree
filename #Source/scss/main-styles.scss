@@ -1298,6 +1298,24 @@ img {
 	@media (min-width: 43.75rem) {
 		padding: 2.5rem 1.25rem;
 	}
+	&-alt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		.content-category-popup__wrapper {
+			max-height: calc(100vh - 80px);
+			overflow: auto;
+			display: block;
+			margin: 0; 
+		}
+		.content-category-popup__map {
+			img {
+				max-height: unset;
+			}
+		}
+	}
 	&._preparing {
 		opacity: 0;
 		visibility: hidden;
@@ -1403,7 +1421,6 @@ img {
 		height: 100%;
 		overflow: hidden;
 	}
-
 
 	&__map {
 		@media (min-width: 61.9988rem) {

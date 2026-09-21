@@ -12,6 +12,7 @@
 		},
 		{
 			"id": "mississippi-river",
+			"isAlt":true,
 			"mapSrc": "img/american-cruises/popups/maps/map_02.webp",
 			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_03.webp",
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_04.webp",

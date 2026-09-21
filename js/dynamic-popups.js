@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
       return '';
     }).join('');
     const hasList = popupData.description.some(item => item && item.type === "list");
-
+    const isAlt = popupData.isAlt ? ' content-category-popup-alt' : ''
     return `
-      <div class="content-category-popup" data-popup="${popupData.id}" data-clear-transition>
+      <div class="content-category-popup${isAlt}" data-popup="${popupData.id}" data-clear-transition>
         <div class="content-category-popup__wrapper" data-popup-wrapper>
           <button type="button" class="content-category-popup__close-button" aria-label="close popup" data-popup-close>
             <svg>

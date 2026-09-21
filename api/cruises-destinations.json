@@ -82,6 +82,7 @@
 		},
 		{
 			"id": "mississippi",
+			"isAlt":true,
 			"mapSrc": "img/categories-page/popups/maps/cruise-map_09.webp",
 			"firstGallertImageSrc": "img/categories-page/popups/gallery-images/gallery-image_17.webp",
 			"secondGallertImageSrc": "img/categories-page/popups/gallery-images/gallery-image_18.webp",
