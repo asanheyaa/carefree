@@ -2171,7 +2171,12 @@ img {
 		color: #5e5e5e;
 		padding-top: 2rem;
 		border-top: 0.0625rem solid var(--content-secondary);
-
+		span{
+			display: block;
+			&:not(:last-child){
+				margin-bottom: 15px;
+				}
+		}
 		@media (max-width: 61.9988rem) {
 			padding-top: 1.5rem;
 		}

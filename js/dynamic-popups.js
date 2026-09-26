@@ -92,8 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${popupData.mapSrc || ''}" 
                      width="426" height="426"
                      alt="map"
-                     onerror="this.style.display='none'"
-                     onload="this.nextElementSibling.style.display='none'">
+                     onerror="this.style.display='none'">
               </div>
             </div>
             <div class="content-category-popup__content">
@@ -103,8 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${popupData.firstGallertImageSrc || ''}" 
                          width="268" height="153" 
                          alt="gallery-image"
-                         onerror="this.style.display='none'"
-                         onload="this.nextElementSibling.style.display='none'">
+                         onerror="this.style.display='none'">
                     <div class="skeleton-loader"></div>
                   </div>
                 </div>
@@ -113,8 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${popupData.secondGallertImageSrc || ''}" 
                          width="268" height="153" 
                          alt="gallery-image"
-                         onerror="this.style.display='none'"
-                         onload="this.nextElementSibling.style.display='none'">
+                         onerror="this.style.display='none'">
                     <div class="skeleton-loader"></div>
                   </div>
                 </div>

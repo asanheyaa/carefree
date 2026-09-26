@@ -250,15 +250,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // form validation
 
-document.addEventListener('DOMContentLoaded', () => {
 	const form = document.querySelector('.form-contact__form');
 
-	if (!form) return;
+if (form){
 
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	
 	function isValidGlobalPhone(phone) {
 		const cleaned = phone.replace(/[^\d]/g, '');
-
 		return cleaned.length >= 10 && cleaned.length <= 15;
 	}
 
@@ -272,18 +271,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (input.hasAttribute('required') && value === '') {
 			isValid = false;
 		}
-		else if (input.type === 'email' && value !== '') {
-			isValid = emailRegex.test(value);
-		}
-		else if (input.id === 'phone_number' && value !== '') {
-			isValid = isValidGlobalPhone(value);
-		}
-		else if (input.type === 'number' && value !== '') {
-			if (parseInt(value, 10) <= 0) {
-				isValid = false;
+		else if (value !== '') {
+			if (input.type === 'email') {
+				isValid = emailRegex.test(value);
 			}
-		} else if (input.id === 'travel_dates') {
-			input.addEventListener('input', () => validateField(input));
+			else if (input.id === 'phone_number') {
+				isValid = isValidGlobalPhone(value);
+			}
+			else if (input.type === 'number') {
+				if (parseInt(value, 10) <= 0) {
+					isValid = false;
+				}
+			}
 		}
 
 		if (!isValid) {
@@ -295,9 +294,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		return isValid;
 	}
 
-	form.querySelectorAll('.form-contact__input, input[type="hidden"]').forEach(input => {
+	const fieldsToValidate = form.querySelectorAll('.form-contact__input');
+
+	fieldsToValidate.forEach(input => {
 		input.addEventListener('blur', () => validateField(input));
-		if (input.id === 'travel_dates') {
+		
+		if (input.id === 'travel_dates' || input.id === 'phone_number') {
 			input.addEventListener('input', () => validateField(input));
 		}
 	});
@@ -305,9 +307,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	form.addEventListener('submit', (event) => {
 		let isFormValid = true;
 
-		const requiredInputs = form.querySelectorAll('[required]');
+		const allInputsForSubmit = form.querySelectorAll('.form-contact__input, input[required]');
 
-		requiredInputs.forEach(input => {
+		allInputsForSubmit.forEach(input => {
 			const isFieldValid = validateField(input);
 			if (!isFieldValid) {
 				isFormValid = false;
@@ -315,18 +317,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		if (!isFormValid) {
-			event.preventDefault();
+			event.preventDefault(); 
 
 			const firstError = form.querySelector('.--error');
 			if (firstError) {
 				firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
 			}
 		} else {
-			const successMesage = document.querySelector('.form-contact-success');
-			successMesage.classList.add('_active')
+			const successMessage = document.querySelector('.form-contact-success');
+			if (successMessage) {
+				successMessage.classList.add('_active');
+			}
 		}
 	});
-});
+	}
 
 // pop ups
 

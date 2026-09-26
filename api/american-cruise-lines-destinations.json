@@ -28,7 +28,7 @@
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_06.webp",
 			"title": "Hudson River Cruises",
 			"description": [
-				"Enjoy the beauty and heritage of the Hudson River Valley on a cruise during summer's lush greenery or fall's vibrant colours. This journey blends relaxation with enriching adventure, with the Catskill Mountains provide a stunning natural backdrop along your travels in either direction."
+				"Enjoy the beauty and heritage of the Hudson River Valley on a cruise during summer's lush greenery or fall's vibrant colours. This journey blends relaxation with enriching adventure, with the Catskill Mountains providing a stunning natural backdrop along your travels in either direction."
 			]
 		},
 		{
@@ -168,7 +168,7 @@
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_34.webp",
 			"title": "Glacier National Park",
 			"description": [
-				"Glacier National Park features the unspoiled beauty of alpine meadows, deep forests, waterfalls, glistening glaciers and sparkling lakes."
+				"Glacier National Park features the unspoiled beauty of alpine meadows, deep forests, waterfalls, glistening glaciers, and sparkling lakes."
 			]
 		},
 		{
@@ -188,7 +188,7 @@
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_38.webp",
 			"title": "Grand Teton National Park",
 			"description": [
-				"Get lost in over 300,000 acres of lush valley, mountain meadows, alpine lakes, majestic mountains and fields of lemon-yellow blooms."
+				"Get lost in over 300,000 acres of lush valley, mountain meadows, alpine lakes, majestic mountains, and fields of lemon-yellow blooms."
 			]
 		},
 		{
@@ -276,7 +276,7 @@
 			"mapSrc": "img/american-cruises/popups/maps/map_24.webp",
 			"firstGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_47.webp",
 			"secondGallertImageSrc": "img/american-cruises/popups/gallery-images/gallery-image_48.webp",
-			"title": "American Independence, Spirit and Star Cruise Ships",
+			"title": "American Independence, Spirit, and Star Cruise Ships",
 			"description": [
 				{
 					"type": "list",
@@ -308,7 +308,7 @@
 						"Elevator Access to All Passenger Decks"
 					]
 				},
-				"Available on the Columbia & Snake, Mississippi, Ohio and Tennessee River Cruises"
+				"Available on the Columbia & Snake, Mississippi, Ohio, and Tennessee River Cruises"
 			]
 		}
 	]

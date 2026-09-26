@@ -54,8 +54,8 @@ if (homePartnersSwipersWrappers) {
 				}
 			};
 
-			const prevButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-prev'),
-				nextButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-next'),
+			const prevButton = homePartnersSwipersWrapper.closest('.home-partners').querySelector('.content-home-partners__button-prev'),
+				nextButton = homePartnersSwipersWrapper.closest('.home-partners').querySelector('.content-home-partners__button-next'),
 				pagination = homePartnersSwipersWrapper.querySelector('.content-home-partners__pagination')
 			if (homePartnersSwipers.length === 2) {
 				if (isAltMobile){
@@ -91,9 +91,9 @@ if (homePartnersSwipersWrappers) {
 				}
 
 			} else {
-				const prevButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-prev'),
-					nextButton = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__button-next'),
-					pagination = homePartnersSwipersWrapper.closest('section').querySelector('.content-home-partners__pagination')
+				const prevButton = homePartnersSwipersWrapper.closest('.home-partners').querySelector('.content-home-partners__button-prev'),
+					nextButton = homePartnersSwipersWrapper.closest('.home-partners').querySelector('.content-home-partners__button-next'),
+					pagination = homePartnersSwipersWrapper.closest('.home-partners').querySelector('.content-home-partners__pagination')
 				swiperConfig.navigation = {
 					nextEl: nextButton,
 					prevEl: prevButton,
